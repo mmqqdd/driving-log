@@ -73,7 +73,6 @@ export default defineConfig({
             { text: '各科', link: '/subjects/' },
             { text: '科目一快速攻略', link: '/subjects/kemu1-guide' },
             { text: '练一练', link: '/subjects/practice' },
-            { text: '差点搞错的地方', link: '/system/pits' },
           ],
         },
         ...group('按科目', 'subjects', { skipGuides: true }),
@@ -82,7 +81,6 @@ export default defineConfig({
         {
           text: '考试攻略',
           items: [
-            { text: '差点搞错的地方', link: '/system/pits' },
             { text: '驾考档案', link: '/system/profile' },
           ],
         },

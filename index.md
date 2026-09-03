@@ -28,6 +28,5 @@ title: 首页
 - [科目二 · 场地](/subjects/kemu2) —— C2 四项：倒车入库、侧方、曲线、直角
 - [科目三 · 路考](/subjects/kemu3) —— 从上车准备到夜间行驶
 - [科目四 · 安全文明](/subjects/kemu4) —— 路考过了不用预约
-- [这些地方我差点搞错](/system/pits)
 
 [全部考试攻略 →](/subjects/)

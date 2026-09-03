@@ -13,7 +13,6 @@
 | `subjects/` | 考试攻略，一科一页；`*-guide.md` 是攻略，`practice.md` 是练习 | AI 写，用户补细节 |
 | `kb/` | 知识库：官方源、社区源、目标拆解。不上网站 | AI |
 | `public/practice/` | 自己写的练习卡 JSON | AI |
-| `system/pits.md` | 差点搞错的地方 | AI |
 | `system/profile.md` | 驾校、费用、进度。frontmatter 的 `profile` 是硬数据 | 用户说，AI 写 |
 | `public/images/` | 用户发来的图，网页用 `/images/文件名` 引用 | AI 拷进去 |
 
