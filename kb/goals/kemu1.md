@@ -44,6 +44,6 @@ updated: 2026-09-03
 | 原子 | `kb/atoms/k1.json` |
 | 错题笔记 | `subjects/kemu1.md` |
 | 练习 | `public/practice/k1/01.json`–`06.json`，嵌在各节课底 |
-| 500 题库 | 原文 `kb/raw/bank/k1/`；分类 `kb/questions/`。模拟考还没做 |
+| 500 题库 | 原文 `kb/raw/bank/k1/`；分类 `kb/questions/`；模拟考 `/exam` |
 | 社区蒸馏 | `kb/extracts/kemu1-koujue.md`、`exam-hall.md` |
 | 旧入口 | `kemu1-guide.md` / `practice.md` 重定向到 `k1/` |

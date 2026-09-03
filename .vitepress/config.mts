@@ -70,6 +70,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '科目一训练', link: '/subjects/k1/' },
+      { text: '模拟考试', link: '/exam' },
       { text: '考试记录', link: '/journal/' },
     ],
 
@@ -77,7 +78,10 @@ export default defineConfig({
       '/subjects/': [
         {
           text: '科目一',
-          items: [{ text: '六节目录', link: '/subjects/k1/' }],
+          items: [
+            { text: '六节目录', link: '/subjects/k1/' },
+            { text: '模拟考试', link: '/exam' },
+          ],
         },
         ...group('按节学', 'subjects/k1'),
       ],

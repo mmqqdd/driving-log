@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
+    "exam:pack": "python3 scripts/publish-k1-exam.py",
+    "build": "python3 scripts/publish-k1-exam.py && vitepress build",
     "preview": "vitepress preview"
   },
   "private": true,

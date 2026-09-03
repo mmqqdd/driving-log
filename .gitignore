@@ -30,3 +30,6 @@ kb/raw/
 
 # 本地 OCR 二进制
 scripts/ocr-vision
+
+# 模拟考题包（从 kb/raw 现抽，不上 git）
+public/practice/exam/

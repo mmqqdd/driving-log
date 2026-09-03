@@ -57,7 +57,7 @@ description: 把一个学习目标拆开、收集资料、写成攻略，必要�
 - 把商业题库原文搬进 `public/` 或 git
 - 销售/教练真名、聊天截图（隐私）
 
-用户自己的「精选 500」扫描件：抽进 `kb/raw/bank/`（本地），分类写进 `kb/questions/`。
+用户自己的「精选 500」扫描件：抽进 `kb/raw/bank/`（本地），分类写进 `kb/questions/`。模拟考页面 `/exam` 组卷时再拷到 `public/practice/exam/`，两处都不进 git。
 
 ### 4. 写进知识库
 

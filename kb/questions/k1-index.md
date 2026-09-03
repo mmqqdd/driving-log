@@ -48,7 +48,7 @@ updated: 2026-09-03
 
 134 张裁图在 `kb/raw/bank/k1/images/q002.png` 这种。  
 JSON 里 `has_image` + `image`（没图是 `null`）。  
-整页扫描不留。公开站 `/images` 没塞。
+整页扫描不留。模拟考组卷时压成 jpg，拷到 `public/practice/exam/k1/images/`（gitignore）。
 
 ## 抽的时候可能不准
 

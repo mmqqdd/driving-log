@@ -3,7 +3,7 @@
 网页：https://driving-log-d25.pages.dev  
 源码：[Gitee](https://gitee.com/mengqiangding/driving-log) · [GitHub](https://github.com/mmqqdd/driving-log)
 
-网站只留两栏：**科目一训练**、**考试记录**。训练按「一节一课 + 一包题」长。科二科三以后套同一套架子。
+网站三栏：**科目一训练**、**模拟考试**、**考试记录**。训练按「一节一课 + 一包题」长。科二科三以后套同一套架子。
 
 ---
 
@@ -14,10 +14,10 @@
 ```
 首页
   现在练：科目一
-  └ 第 1 节 → 第 2 节 → … → 第 N 节
+  └ 第 1 节 → 第 2 节 → … → 模拟考试
 
 顶栏
-  科目一训练    考试记录
+  科目一训练    模拟考试    考试记录
 ```
 
 考试记录只记日常（报名、听课、约考）。流程页留在记录里，不和训练抢位置。科二科三页面先不上导航。
@@ -68,7 +68,7 @@ public/practice/k1/    题（给 Quiz 抽）
 | 题库层 | `kb/questions/` | 分类和字段。精选 500 的原文 + 裁图在 `kb/raw/bank/k1/`，不上站、不进 git |
 | 课 | `subjects/k1/` | 一节一件事，底下跟测 |
 | 随堂测 | `public/practice/k1/` | 自己写的易混题，`q` / `type` / `answer` / `why` |
-| 模拟考（还没做） | 以后从 `kb/raw/bank/k1/k1-500.json` 抽 | 按 `ga` 比例；有 `image` 的题带图；`tip_kind=discard` 不用 |
+| 模拟考 | `exam.md` + `public/practice/exam/k1/` | 从 500 题抽 100；按 `ga` 比例；有图带图；蒙题 tip 不用 |
 | 错题本 | `subjects/kemu1.md` | App 里错过的原题，压成「题意 + 为什么错」，不进 JSON |
 
 官方和社区必须分开。口诀可以写进课里，旁边能指回法规或 12123。蒙题法（看见某词就打对）不进课、不进题。

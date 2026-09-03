@@ -6,7 +6,7 @@ updated: 2026-09-03
 # 科目一题库层
 
 随堂测是自己写的，在 `public/practice/k1/`。  
-模拟考要从「精选 500」里抽，原题和配图放本地，不上网站、不进 git。
+模拟考要从「精选 500」里抽。原文仍在 `kb/raw/bank/`，不上 git。组卷时拷到 `public/practice/exam/`（也 gitignore），页面是 `exam.md`。
 
 ```
 kb/raw/科目一（技巧口诀+500题）/科目一精选500题＋新规.pdf
@@ -68,8 +68,8 @@ kb/raw/科目一（技巧口诀+500题）/科目一精选500题＋新规.pdf
 没有这类图的题 `has_image=false`，`image=null`。  
 `kb/raw/bank/` 跟 PDF 一样 gitignore，公开站 `/images` 不塞。
 
-## 模拟考以后怎么用
+## 模拟考怎么用
 
-从 `k1-500.json` 抽 100 道：判断约 40、单选约 60，再按 `ga` 比例。  
-`why` 用法规意思，不用 `tip_kind=discard` 的蒙题句。  
-有 `image` 的题，按这个相对路径找图。
+`scripts/publish-k1-exam.py` 从 `k1-500.json` 抽出能用的题（选项齐全），图压成 jpg。  
+`Exam.vue` 抽 100 道：判断约 40、单选约 60，再按 `ga` 比例。  
+`why` 用法规意思或口诀，不用 `tip_kind=discard` 的蒙题句。
