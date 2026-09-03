@@ -10,7 +10,9 @@
 |---|---|---|
 | `index.md` | 首页，两个入口 | 少改 |
 | `journal/` | 考试记录。`process.md` 是从报名到拿证；日期文件是故事 | AI |
-| `subjects/` | 考试攻略，一科一页 | AI 写，用户补细节 |
+| `subjects/` | 考试攻略，一科一页；`*-guide.md` 是攻略，`practice.md` 是练习 | AI 写，用户补细节 |
+| `kb/` | 知识库：官方源、社区源、目标拆解。不上网站 | AI |
+| `public/practice/` | 自己写的练习卡 JSON | AI |
 | `system/pits.md` | 差点搞错的地方 | AI |
 | `system/profile.md` | 驾校、费用、进度。frontmatter 的 `profile` 是硬数据 | 用户说，AI 写 |
 | `public/images/` | 用户发来的图，网页用 `/images/文件名` 引用 | AI 拷进去 |
@@ -18,6 +20,8 @@
 ## 常用请求
 
 用户说「今天练了 XX」「这题又错了」「教练说」「约了科目二」→ 用 `drive-log` skill。
+
+用户说「攻略」「拆解」「收集资料」「怎么过科目一」或丢来新目标 → 用 `make-guide` skill：先拆目标、收资料（官方再社区），再写攻略和练习。
 
 用户说「流程是这样」「科目一按这几块学」→ 写 `journal/process.md` 或对应科目攻略，不要只记成一条碎笔记。按用户自己的节奏写，不要用网上通用课表覆盖。
 

@@ -17,7 +17,7 @@ function readTitle(file: string, fallback: string): string {
  * 扫描目录生成侧边栏。日志会持续增长，手写 sidebar 迟早失控，
  * 所以这里按文件系统自动生成，新建一个 .md 就自动出现在导航里。
  */
-function autoItems(dir: string, opts: { desc?: boolean; onlyDates?: boolean } = {}): DefaultTheme.SidebarItem[] {
+function autoItems(dir: string, opts: { desc?: boolean; onlyDates?: boolean; skipGuides?: boolean } = {}): DefaultTheme.SidebarItem[] {
   const abs = path.join(root, dir)
   if (!fs.existsSync(abs)) return []
 
@@ -26,6 +26,7 @@ function autoItems(dir: string, opts: { desc?: boolean; onlyDates?: boolean } = 
     .filter((f) => {
       if (!f.endsWith('.md') || f === 'index.md' || f.startsWith('_')) return false
       if (opts.onlyDates) return /^\d{4}-\d{2}-\d{2}/.test(f)
+      if (opts.skipGuides) return !f.includes('-guide') && f !== 'practice.md'
       return true
     })
     .sort()
@@ -41,7 +42,7 @@ function autoItems(dir: string, opts: { desc?: boolean; onlyDates?: boolean } = 
 function group(
   text: string,
   dir: string,
-  opts: { desc?: boolean; onlyDates?: boolean } = {}
+  opts: { desc?: boolean; onlyDates?: boolean; skipGuides?: boolean } = {}
 ): DefaultTheme.SidebarItem[] {
   const items = autoItems(dir, opts)
   return items.length ? [{ text, items }] : []
@@ -52,7 +53,7 @@ export default defineConfig({
   title: '我在北京考驾照',
   description: '一个完全没考过的人，从选驾校开始记下的考试记录和攻略',
 
-  srcExclude: ['README.md', 'AGENTS.md', 'node_modules/**', '**/_template.md'],
+  srcExclude: ['README.md', 'AGENTS.md', 'kb/**', 'node_modules/**', '**/_template.md'],
 
   cleanUrls: true,
   lastUpdated: true,
@@ -66,8 +67,16 @@ export default defineConfig({
 
     sidebar: {
       '/subjects/': [
-        { text: '考试攻略', items: [{ text: '各科', link: '/subjects/' }, { text: '差点搞错的地方', link: '/system/pits' }] },
-        ...group('按科目', 'subjects'),
+        {
+          text: '考试攻略',
+          items: [
+            { text: '各科', link: '/subjects/' },
+            { text: '科目一快速攻略', link: '/subjects/kemu1-guide' },
+            { text: '练一练', link: '/subjects/practice' },
+            { text: '差点搞错的地方', link: '/system/pits' },
+          ],
+        },
+        ...group('按科目', 'subjects', { skipGuides: true }),
       ],
       '/system/': [
         {

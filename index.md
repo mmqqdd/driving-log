@@ -22,8 +22,10 @@ title: 首页
 
 到了这一科，具体怎么考。
 
-- [科目一 · 理论](/subjects/kemu1) —— 听录播、刷题库，100 题 90 过
-- [科目二 · 场地](/subjects/kemu2) —— 倒车入库、侧方、曲线、直角
+- [科目一快速攻略](/subjects/kemu1-guide) —— 考纲、去哪刷题、怎么过 90
+- [练一练](/subjects/practice) —— 易混规则，对还是错
+- [科目一笔记](/subjects/kemu1) —— 错过的、会混的
+- [科目二 · 场地](/subjects/kemu2) —— C2 四项：倒车入库、侧方、曲线、直角
 - [科目三 · 路考](/subjects/kemu3) —— 从上车准备到夜间行驶
 - [科目四 · 安全文明](/subjects/kemu4) —— 路考过了不用预约
 - [这些地方我差点搞错](/system/pits)

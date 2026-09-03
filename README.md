@@ -9,8 +9,9 @@
 
 ```
 journal/    考试记录：process.md 是从报名到拿证，日期文件是故事
-subjects/   考试攻略：科目一到四
-public/images/  当时的聊天和驾校材料
+subjects/   考试攻略；practice.md 是练习
+kb/         资料库：官方 / 社区 / 目标拆解
+public/practice/  自己写的练习卡
 ```
 
 ```bash
