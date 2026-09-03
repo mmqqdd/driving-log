@@ -17,13 +17,17 @@ function readTitle(file: string, fallback: string): string {
  * 扫描目录生成侧边栏。日志会持续增长，手写 sidebar 迟早失控，
  * 所以这里按文件系统自动生成，新建一个 .md 就自动出现在导航里。
  */
-function autoItems(dir: string, opts: { desc?: boolean } = {}): DefaultTheme.SidebarItem[] {
+function autoItems(dir: string, opts: { desc?: boolean; onlyDates?: boolean } = {}): DefaultTheme.SidebarItem[] {
   const abs = path.join(root, dir)
   if (!fs.existsSync(abs)) return []
 
   const items = fs
     .readdirSync(abs)
-    .filter((f) => f.endsWith('.md') && f !== 'index.md' && !f.startsWith('_'))
+    .filter((f) => {
+      if (!f.endsWith('.md') || f === 'index.md' || f.startsWith('_')) return false
+      if (opts.onlyDates) return /^\d{4}-\d{2}-\d{2}/.test(f)
+      return true
+    })
     .sort()
     .map((f) => ({
       text: readTitle(path.join(abs, f), f.replace(/\.md$/, '')),
@@ -37,7 +41,7 @@ function autoItems(dir: string, opts: { desc?: boolean } = {}): DefaultTheme.Sid
 function group(
   text: string,
   dir: string,
-  opts: { desc?: boolean } = {}
+  opts: { desc?: boolean; onlyDates?: boolean } = {}
 ): DefaultTheme.SidebarItem[] {
   const items = autoItems(dir, opts)
   return items.length ? [{ text, items }] : []
@@ -45,8 +49,8 @@ function group(
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: '我的驾考全过程',
-  description: '北京东方时尚驾考时间线、各科资料、学习笔记和踩过的坑',
+  title: '我在北京考驾照',
+  description: '一个完全没考过的人，从选驾校开始记下的考试记录和攻略',
 
   srcExclude: ['README.md', 'AGENTS.md', 'node_modules/**', '**/_template.md'],
 
@@ -56,38 +60,27 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '时间线', link: '/journal/' },
-      { text: '科目笔记', link: '/subjects/' },
-      { text: '踩过的坑', link: '/system/pits' },
-      {
-        text: '资料',
-        items: [
-          { text: '学习路线', link: '/system/route' },
-          { text: '驾考档案', link: '/system/profile' },
-          { text: '东方时尚', link: '/system/school' },
-        ],
-      },
+      { text: '考试记录', link: '/journal/' },
+      { text: '考试攻略', link: '/subjects/' },
     ],
 
     sidebar: {
+      '/subjects/': [
+        { text: '考试攻略', items: [{ text: '各科', link: '/subjects/' }, { text: '差点搞错的地方', link: '/system/pits' }] },
+        ...group('按科目', 'subjects'),
+      ],
       '/system/': [
         {
-          text: '系统',
+          text: '考试攻略',
           items: [
-            { text: '学习路线', link: '/system/route' },
+            { text: '差点搞错的地方', link: '/system/pits' },
             { text: '驾考档案', link: '/system/profile' },
-            { text: '东方时尚', link: '/system/school' },
-            { text: '踩过的坑', link: '/system/pits' },
           ],
         },
       ],
-      '/subjects/': [
-        { text: '科目', items: [{ text: '全部科目', link: '/subjects/' }] },
-        ...group('按科目', 'subjects'),
-      ],
       '/journal/': [
-        { text: '时间线', items: [{ text: '全部记录', link: '/journal/' }] },
-        ...group('按日期', 'journal', { desc: true }),
+        { text: '考试记录', items: [{ text: '故事', link: '/journal/' }, { text: '从报名到拿证', link: '/journal/process' }] },
+        ...group('按日期', 'journal', { desc: true, onlyDates: true }),
       ],
     },
 
@@ -112,7 +105,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '我的驾考全过程 · 时间线 / 资料 / 笔记 / 坑',
+      message: '我在北京考驾照 · 考试记录 / 考试攻略',
       copyright: '© 2026 孟强定',
     },
   },

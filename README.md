@@ -1,62 +1,21 @@
-# 我的驾考全过程
+# 我在北京考驾照
 
-记录自己从报名到拿证的全过程，也记下每科怎么学。
+一个完全没考过的人，从美团搜驾校开始记下的故事。
 
-不是题库，也不是驾校课本。是一份跟着我走完四科的学习笔记：路线怎么定、每科先学什么再复习什么、练车和刷题时踩过哪些坑。
+网页分两块：**考试记录**（流程和每天发生的事）和 **考试攻略**（各科怎么考）。
 
-## 在哪看
-
-| | 地址 |
-|---|---|
-| **网页** | https://driving-log-d25.pages.dev |
-| **源码 · Gitee** | https://gitee.com/mengqiangding/driving-log |
-| **源码 · GitHub** | https://github.com/mmqqdd/driving-log |
-
-网页给自己上场前翻，源码是这份笔记的原文。两边内容一致。
-
-## 记什么
-
-1. **全过程** —— 报名、体检、约考、过科、拿证。哪天发生了什么，写进日志和档案。
-2. **学习路线** —— 我打算怎么排这几科、每天花多少时间、先刷题还是先看视频。写在 `system/route.md`。
-3. **各科大纲** —— 比如科目一先有课程大纲（这块知识怎么铺），再有复习大纲（考前过什么）。科目二、三、四同样。
-4. **过程里的细节** —— 练车失败点、错题、教练随口说的看点。说一句就记下来。
-
-## 怎么用
-
-在 Cursor 里打开这个仓库，直接说话：
-
-| 说什么 | 会发生什么 |
-|---|---|
-| 我的学习路线是…… | 写进 `system/route.md` |
-| 科目一按这几块学：交规、标志、扣分…… | 生成 / 改科目一的课程大纲 |
-| 考前复习就过这几类易混题 | 写成科目一的复习大纲 |
-| 今天练倒车入库，右库压线了 | 当天日志 + 科目二失败点 |
-| 这题又错了：黄灯已过停止线可以继续 | 记进对应科目的易错 |
-| 下周三约了科目二 | 更新档案里的考试日期 |
-
-## 结构
+- 网页：https://driving-log-d25.pages.dev
+- 源码：[Gitee](https://gitee.com/mengqiangding/driving-log) · [GitHub](https://github.com/mmqqdd/driving-log)
 
 ```
-system/     档案、学习路线、这套笔记怎么用
-subjects/   科目一到四：大纲 + 口诀 + 易错 + 失败点
-journal/    全过程日志（练车、刷题、约考、过科）
+journal/    考试记录：process.md 是从报名到拿证，日期文件是故事
+subjects/   考试攻略：科目一到四
+public/images/  当时的聊天和驾校材料
 ```
-
-## 本地运行
 
 ```bash
 npm install
 npm run dev
 ```
 
-打开 http://localhost:5173
-
-## 部署
-
-线上在 [Cloudflare Pages](https://driving-log-d25.pages.dev)。代码同时在 Gitee（`origin`）和 GitHub（`github`）：
-
-```bash
-git push all main
-```
-
-记完新内容后可以说「部署一下」，会重新构建并发布到网页。
+打开 http://localhost:5173。发布：`git push all main`，再说一声「部署一下」。
