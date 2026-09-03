@@ -1,0 +1,15 @@
+{
+  "name": "driving-log",
+  "version": "1.0.0",
+  "description": "我的驾考笔记 — 练车日志、科目要点、易错题",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "private": true,
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
