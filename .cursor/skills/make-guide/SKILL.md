@@ -68,11 +68,12 @@ description: 把一个学习目标拆开、收集资料、写成攻略，必要�
 
 ### 5. 写成攻略
 
-给人看的页面在 `subjects/` 或 `journal/`，口吻是故事，不是「怎么样 / 记下来」。
+给人看的页面在 `subjects/`、`journal/` 或 `kb/`（资料：来源 + 口诀）。口吻是故事，不是「怎么样 / 记下来」。
 
 攻略里写：上场什么样、按什么顺序学、去哪练、依据是哪份官方文件。  
 社区口诀可以出现，但旁边能指回官方或 12123。
 
+`kb/index.md`、`sources-*.md`、`extracts/` 上网站。`kb/README.md`、`goals/`、`extracts/pack.md`、`raw/` 不上。  
 网站上不要写 Cursor、不要写「本知识库给 AI 用」。
 
 ### 6. 练习

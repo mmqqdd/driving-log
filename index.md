@@ -30,3 +30,15 @@ title: 首页
 - [科目四 · 安全文明](/subjects/kemu4) —— 路考过了不用预约
 
 [全部考试攻略 →](/subjects/)
+
+## 资料
+
+法规、社区口诀、我从讲义里抽出的记分和上场流程。和官方打架听官方。
+
+- [资料从哪来](/kb/) —— 官方一层，社区一层
+- [科目一口诀](/kb/extracts/kemu1-koujue) —— 记分、限速、手势
+- [科目二上场和评判](/kb/extracts/kemu2-judging) —— C2 四项，哪些直接挂
+- [科目三上场和评判](/kb/extracts/kemu3-judging) —— 听到什么做什么
+- [科目四口诀](/kb/extracts/kemu4-koujue) —— 50 题、文明驾驶
+
+[全部资料 →](/kb/)

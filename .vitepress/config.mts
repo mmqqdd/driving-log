@@ -24,7 +24,7 @@ function autoItems(dir: string, opts: { desc?: boolean; onlyDates?: boolean; ski
   const items = fs
     .readdirSync(abs)
     .filter((f) => {
-      if (!f.endsWith('.md') || f === 'index.md' || f.startsWith('_')) return false
+      if (!f.endsWith('.md') || f === 'index.md' || f.startsWith('_') || f === 'pack.md') return false
       if (opts.onlyDates) return /^\d{4}-\d{2}-\d{2}/.test(f)
       if (opts.skipGuides) return !f.includes('-guide') && f !== 'practice.md'
       return true
@@ -53,7 +53,17 @@ export default defineConfig({
   title: '我在北京考驾照',
   description: '一个完全没考过的人，从选驾校开始记下的考试记录和攻略',
 
-  srcExclude: ['README.md', 'AGENTS.md', 'kb/**', 'node_modules/**', '**/_template.md'],
+  srcExclude: [
+    'README.md',
+    'AGENTS.md',
+    'kb/README.md',
+    'kb/goals/**',
+    'kb/raw/**',
+    'kb/extracts/pack.md',
+    'kb/extracts/_pack.md',
+    'node_modules/**',
+    '**/_template.md',
+  ],
 
   cleanUrls: true,
   lastUpdated: true,
@@ -63,6 +73,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '考试记录', link: '/journal/' },
       { text: '考试攻略', link: '/subjects/' },
+      { text: '资料', link: '/kb/' },
     ],
 
     sidebar: {
@@ -84,6 +95,18 @@ export default defineConfig({
             { text: '驾考档案', link: '/system/profile' },
           ],
         },
+      ],
+      '/kb/': [
+        {
+          text: '资料',
+          items: [
+            { text: '从哪来', link: '/kb/' },
+            { text: '官方公开', link: '/kb/sources-official' },
+            { text: '社区讲义', link: '/kb/sources-community' },
+            { text: '口诀和流程', link: '/kb/extracts/' },
+          ],
+        },
+        ...group('口诀和流程', 'kb/extracts'),
       ],
       '/journal/': [
         { text: '考试记录', items: [{ text: '故事', link: '/journal/' }, { text: '从报名到拿证', link: '/journal/process' }] },
@@ -112,7 +135,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '我在北京考驾照 · 考试记录 / 考试攻略',
+      message: '我在北京考驾照 · 考试记录 / 考试攻略 / 资料',
       copyright: '© 2026 孟强定',
     },
   },
