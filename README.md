@@ -2,6 +2,9 @@
 
 > 练完、刷完、听完教练一句话，对着 Cursor 说出来就行。
 
+- 仓库：[Gitee](https://gitee.com/mengqiangding/driving-log) · [GitHub](https://github.com/mmqqdd/driving-log)
+- 线上：https://driving-log-d25.pages.dev
+
 ## 本地运行
 
 ```bash
@@ -37,4 +40,12 @@ journal/    练车 / 刷题日志
 
 ## 部署
 
-`vercel.json` 已配好。练车场上用手机翻笔记，比对着电脑方便。
+线上在 [Cloudflare Pages](https://driving-log-d25.pages.dev)，练车场上用手机翻笔记。
+
+代码在两个远端：Gitee（`origin`）给国内看仓库，GitHub（`github`）备用。一次推两个：
+
+```bash
+git push all main
+```
+
+站点目前是直接上传。记完新笔记后可以说「部署一下」，会重新构建并发布。
