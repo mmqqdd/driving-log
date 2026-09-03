@@ -56,11 +56,7 @@ export default defineConfig({
   srcExclude: [
     'README.md',
     'AGENTS.md',
-    'kb/README.md',
-    'kb/goals/**',
-    'kb/raw/**',
-    'kb/extracts/pack.md',
-    'kb/extracts/_pack.md',
+    'kb/**',
     'node_modules/**',
     '**/_template.md',
   ],
@@ -71,22 +67,17 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
+      { text: '科目一', link: '/subjects/k1/' },
       { text: '考试记录', link: '/journal/' },
-      { text: '考试攻略', link: '/subjects/' },
-      { text: '资料', link: '/kb/' },
     ],
 
     sidebar: {
       '/subjects/': [
         {
-          text: '考试攻略',
-          items: [
-            { text: '各科', link: '/subjects/' },
-            { text: '科目一快速攻略', link: '/subjects/kemu1-guide' },
-            { text: '练一练', link: '/subjects/practice' },
-          ],
+          text: '科目一',
+          items: [{ text: '六节目录', link: '/subjects/k1/' }],
         },
-        ...group('按科目', 'subjects', { skipGuides: true }),
+        ...group('按节学', 'subjects/k1'),
       ],
       '/system/': [
         {
@@ -95,18 +86,6 @@ export default defineConfig({
             { text: '驾考档案', link: '/system/profile' },
           ],
         },
-      ],
-      '/kb/': [
-        {
-          text: '资料',
-          items: [
-            { text: '从哪来', link: '/kb/' },
-            { text: '官方公开', link: '/kb/sources-official' },
-            { text: '社区讲义', link: '/kb/sources-community' },
-            { text: '口诀和流程', link: '/kb/extracts/' },
-          ],
-        },
-        ...group('口诀和流程', 'kb/extracts'),
       ],
       '/journal/': [
         { text: '考试记录', items: [{ text: '故事', link: '/journal/' }, { text: '从报名到拿证', link: '/journal/process' }] },
@@ -135,7 +114,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '我在北京考驾照 · 考试记录 / 考试攻略 / 资料',
+      message: '我在北京考驾照 · 科目一按节学',
       copyright: '© 2026 孟强定',
     },
   },

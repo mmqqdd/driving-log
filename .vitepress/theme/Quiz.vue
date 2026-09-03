@@ -1,32 +1,60 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 
 const props = defineProps({
   src: { type: String, required: true },
+  count: { type: [Number, String], default: 5 },
 })
 
 const pack = ref(null)
 const error = ref('')
+const deck = ref([])
 const i = ref(0)
 const picked = ref(null)
 const revealed = ref(false)
 const score = ref(0)
 const done = ref(false)
 
-const item = computed(() => pack.value?.items?.[i.value] ?? null)
-const total = computed(() => pack.value?.items?.length ?? 0)
+const item = computed(() => deck.value[i.value] ?? null)
+const total = computed(() => deck.value.length)
+const take = computed(() => {
+  const n = Number(props.count)
+  return Number.isFinite(n) && n > 0 ? n : 0
+})
+
+function shuffle(list) {
+  const a = list.slice()
+  for (let k = a.length - 1; k > 0; k--) {
+    const j = Math.floor(Math.random() * (k + 1))
+    ;[a[k], a[j]] = [a[j], a[k]]
+  }
+  return a
+}
+
+function deal() {
+  const items = pack.value?.items ?? []
+  const n = take.value ? Math.min(take.value, items.length) : items.length
+  deck.value = shuffle(items).slice(0, n)
+  i.value = 0
+  picked.value = null
+  revealed.value = false
+  score.value = 0
+  done.value = false
+}
 
 async function load() {
   try {
     const res = await fetch(props.src)
     if (!res.ok) throw new Error(String(res.status))
     pack.value = await res.json()
-  } catch (e) {
+    deal()
+  } catch {
     error.value = '练习题没加载上来，刷新试试。'
   }
 }
 
 load()
+watch(() => props.src, load)
 
 function choose(val) {
   if (revealed.value || !item.value) return
@@ -45,14 +73,6 @@ function next() {
   revealed.value = false
 }
 
-function restart() {
-  i.value = 0
-  picked.value = null
-  revealed.value = false
-  score.value = 0
-  done.value = false
-}
-
 function label(val) {
   if (item.value?.type === 'tf') return val ? '对' : '错'
   return String(val)
@@ -64,12 +84,11 @@ function label(val) {
   <div class="quiz" v-else-if="!pack">加载练习…</div>
   <div class="quiz" v-else-if="done">
     <p class="quiz-score">{{ score }} / {{ total }}</p>
-    <p>{{ score === total ? '这几条都稳了。' : '错的回去看「为什么」，明天再过一遍。' }}</p>
-    <p class="quiz-hint">整本 100 题模拟还是去东方时尚 App 或 12123。</p>
-    <button type="button" class="quiz-btn" @click="restart">再来一轮</button>
+    <p>{{ score === total ? '这节过了。' : '错的看完解析，点下面再抽一组。' }}</p>
+    <button type="button" class="quiz-btn primary" @click="deal">再抽一组</button>
   </div>
   <div class="quiz" v-else-if="item">
-    <p class="quiz-meta">{{ pack.title }} · {{ i + 1 }} / {{ total }}</p>
+    <p class="quiz-meta">{{ pack.title }} · 随机 {{ i + 1 }} / {{ total }}</p>
     <p class="quiz-q">{{ item.q }}</p>
     <div class="quiz-opts">
       <button
@@ -98,8 +117,8 @@ function label(val) {
         @click="choose(opt)"
       >{{ opt }}</button>
     </div>
-    <div v-if="revealed" class="quiz-why">
-      <p>{{ picked === item.answer ? '对。' : `不是。答案是「${label(item.answer)}」。` }}</p>
+    <div v-if="revealed" class="quiz-why" :class="{ miss: picked !== item.answer }">
+      <p class="quiz-verdict">{{ picked === item.answer ? '对。' : `错了。答案是「${label(item.answer)}」。` }}</p>
       <p>{{ item.why }}</p>
       <button type="button" class="quiz-btn primary" @click="next">
         {{ i + 1 >= total ? '看结果' : '下一题' }}
@@ -156,13 +175,18 @@ function label(val) {
 .quiz-why {
   margin-top: 1rem;
 }
+.quiz-why.miss {
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, #c45c5c 10%, var(--vp-c-bg-soft));
+}
+.quiz-verdict {
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
 .quiz-score {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 0 0 0.4rem;
-}
-.quiz-hint {
-  color: var(--vp-c-text-2);
-  font-size: 0.9rem;
 }
 </style>
