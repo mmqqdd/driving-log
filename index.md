@@ -1,26 +1,31 @@
 ---
-layout: home
-
-hero:
-  name: 我在北京考驾照
-  text: 一个完全没考过的人，从选驾校开始
-  tagline: 2026 年 9 月 · 东方时尚
-  actions:
-    - theme: brand
-      text: 考试记录
-      link: /journal/
-    - theme: alt
-      text: 考试攻略
-      link: /subjects/
-
-features:
-  - title: 考试记录
-    details: 美团搜到最近的驾校，加微信，第二天去报名。把流程写清楚，免得下一个人跟我一样懵。
-    link: /journal/
-    linkText: 从选驾校看起
-
-  - title: 考试攻略
-    details: 科目一怎么听课刷题，科目二到四考哪些、钱怎么交、哪些地方容易踩坑。
-    link: /subjects/
-    linkText: 看各科怎么考
+title: 首页
 ---
+
+# 我在北京考驾照
+
+一个完全没考过的人，从选驾校开始。2026 年 9 月，东方时尚。
+
+现在走到 **科目一**。
+
+## 考试记录
+
+给同样没考过、流程很懵的人看。从美团搜驾校讲起。
+
+- [从报名到拿证](/journal/process) —— 七步走完是怎样的
+- [9 月 2 日 · 报名](/journal/2026-09-02) —— 美团搜到亦庄，加微信，第二天就去了
+- [9 月 3 日 · 开始看科目一](/journal/2026-09-03) —— 才知道课没听完约不了考试
+
+[全部考试记录 →](/journal/)
+
+## 考试攻略
+
+到了这一科，具体怎么考。
+
+- [科目一 · 理论](/subjects/kemu1) —— 听录播、刷题库，100 题 90 过
+- [科目二 · 场地](/subjects/kemu2) —— 倒车入库、侧方、曲线、直角
+- [科目三 · 路考](/subjects/kemu3) —— 从上车准备到夜间行驶
+- [科目四 · 安全文明](/subjects/kemu4) —— 路考过了不用预约
+- [这些地方我差点搞错](/system/pits)
+
+[全部考试攻略 →](/subjects/)
