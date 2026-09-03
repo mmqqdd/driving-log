@@ -32,7 +32,8 @@ updated: 2026-09-03
 | 硬条件 | 考试记录里的流程、驾校 App | — |
 | 会考什么 | `kb/sources-official.md` 里的 36 号文、GA 1026 | 攻略页 |
 | 刷题 | 东方时尚全真库、12123 模拟 | 本站练习；卡壳再看 B 站专项 |
-| 口诀 / 手势 | 社区表里「手势」「精选 500」 | 必须对回实施条例或 12123 |
+| 口诀 / 手势 | `kb/extracts/kemu1-koujue.md`；卡壳再看重点题视频 | 必须对回实施条例或 12123 |
+| 理论场怎么进 | `kb/extracts/exam-hall.md` | 京南东方时尚当天窗口 |
 | 约考 | 12123 | — |
 
 ## 产物
@@ -42,3 +43,4 @@ updated: 2026-09-03
 | 攻略 | `subjects/kemu1-guide.md` |
 | 错题笔记 | `subjects/kemu1.md` |
 | 练习 | `subjects/practice.md` ← `public/practice/kemu1.json` |
+| 社区蒸馏 | `kb/extracts/kemu1-koujue.md`、`exam-hall.md` |

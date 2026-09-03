@@ -21,3 +21,9 @@ node_modules/
 # VitePress
 .vitepress/dist/
 .vitepress/cache/
+
+# 夸克未下完
+*.qkdownloading
+
+# 用户收集的原包（扫描题库、视频），只在本地
+kb/raw/

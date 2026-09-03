@@ -11,7 +11,8 @@
 | `index.md` | 首页，两个入口 | 少改 |
 | `journal/` | 考试记录。`process.md` 是从报名到拿证；日期文件是故事 | AI |
 | `subjects/` | 考试攻略，一科一页；`*-guide.md` 是攻略，`practice.md` 是练习 | AI 写，用户补细节 |
-| `kb/` | 知识库：官方源、社区源、目标拆解。不上网站 | AI |
+| `kb/` | 知识库：官方源、社区源、目标拆解、蒸馏笔记。不上网站 | AI |
+| `kb/raw/` | 用户收来的 PDF / 视频原包，gitignore，不上网站 | 用户下，AI 读 |
 | `public/practice/` | 自己写的练习卡 JSON | AI |
 | `system/profile.md` | 驾校、费用、进度。frontmatter 的 `profile` 是硬数据 | 用户说，AI 写 |
 | `public/images/` | 用户发来的图，网页用 `/images/文件名` 引用 | AI 拷进去 |

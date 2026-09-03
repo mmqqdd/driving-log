@@ -10,8 +10,10 @@
 1. 拆目标          →  kb/goals/<id>.md
 2. 收集资料（最难） →  kb/sources-official.md
                      kb/sources-community.md
-3. 写成攻略        →  subjects/<id>-guide.md
-4. 能练的做成练习  →  public/practice/<id>.json + subjects/practice.md
+3. 用户丢来的原包   →  kb/raw/（不上 git、不上网站）
+4. 读完蒸馏        →  kb/extracts/
+5. 写成攻略        →  subjects/<id>-guide.md
+6. 能练的做成练习  →  public/practice/<id>.json + subjects/practice.md
 ```
 
 资料分两层，不要混：
@@ -36,3 +38,4 @@
 - **自己写的易混规则**：根据公开法规改写成判断 / 选择，进 `public/practice/`。
 - **不抄**驾考宝典、一点通、东方时尚题库原文。完整题库不公开，也不该整包搬进仓库。
 - 用户错过的题：压缩成一句「题意 + 为什么错」，写进 `subjects/kemuN.md`，不要粘贴整道原题。
+- 用户收来的「精选 500」扫描件：只放 `kb/raw/`，提炼口诀进 `extracts/`，原题不进仓库。
