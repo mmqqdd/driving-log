@@ -1,0 +1,962 @@
+[
+  {
+    "id": "k1-01-pass90",
+    "kind": "rule",
+    "claim": "科目一 100 题，45 分钟，满分 100，90 过。判断大约 40，单选大约 60。",
+    "why": "GA 1026—2022。东方时尚告知的卷面结构与之一致。",
+    "trust": "official",
+    "source": "GA 1026；驾校告知",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-fee50",
+    "kind": "rule",
+    "claim": "科目一考试费每次 50 元，初考和补考都交。不合格当场或当天可补一次。",
+    "why": "东方时尚价目：科一 50 / 次。申领规定允许当场或当天补考。",
+    "trust": "school",
+    "source": "system/profile.md；驾校告知",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-id-phone",
+    "kind": "rule",
+    "claim": "上场带身份证。手机进考场要关。",
+    "why": "机考要读身份证。智能设备按考场规则不能用。",
+    "trust": "school",
+    "source": "驾校告知；kb/extracts/exam-hall.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-app-attendance",
+    "kind": "rule",
+    "claim": "东方时尚 App 录播必须全部听完，系统记考勤，少一节约不了科一。",
+    "why": "驾校硬门槛，不是国家标准全文，约考认这个。",
+    "trust": "school",
+    "source": "journal/process.md；驾校告知",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-archive-2d",
+    "kind": "rule",
+    "claim": "档案受理满 2 天，并且录播听完，才能约科目一。",
+    "why": "东方时尚北京：课听完且档案过了才能约理论。",
+    "trust": "school",
+    "source": "system/profile.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-book-12123",
+    "kind": "rule",
+    "claim": "约考用交管 12123，场地选京南东方时尚。当天只能约 5 天之后。取消提前 1 个工作日。",
+    "why": "北京约考窗口。场地名以 12123 为准。",
+    "trust": "school",
+    "source": "system/profile.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-no-pdf-bank",
+    "kind": "pit",
+    "claim": "网上「官方完整题库 PDF」不是公安部公开发的。",
+    "why": "国家不整包公开题库。上场从统一机考系统抽。刷题用东方时尚全真库和 12123 模拟。",
+    "trust": "official",
+    "source": "kb/sources-official.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-hall-ticket",
+    "kind": "rule",
+    "claim": "候考厅先领小票排号，待考区一次放大约 50 人。",
+    "why": "全国通用候考厅说明。京南窗口名、号段以当天现场为准。",
+    "trust": "community",
+    "source": "kb/extracts/exam-hall.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-no-devices",
+    "kind": "rule",
+    "claim": "待考区不让带水、烟、眼镜盒、智能设备。",
+    "why": "社区考试流程写明。现场安检以京南当天为准。",
+    "trust": "community",
+    "source": "kb/extracts/exam-hall.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-same-hall",
+    "kind": "rule",
+    "claim": "科一和科四可能同一大厅，电脑按人分配科目。",
+    "why": "理论场共用。坐下看自己的科目，不要跟着旁边人。",
+    "trust": "community",
+    "source": "kb/extracts/exam-hall.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-seat-check",
+    "kind": "rule",
+    "claim": "身份证读卡后抽座位。坐下先核对屏幕上的姓名和身份证号，再开考。",
+    "why": "对不上就举手。开考后再改麻烦。",
+    "trust": "community",
+    "source": "kb/extracts/exam-hall.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-no-talk",
+    "kind": "rule",
+    "claim": "不念题、不站起来、不交头接耳。操作问题举手。",
+    "why": "考场纪律。作弊停考一年，已过科目作废。",
+    "trust": "official",
+    "source": "《机动车驾驶证申领和使用规定》；kb/extracts/exam-hall.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-cheat-1y",
+    "kind": "rule",
+    "claim": "作弊停考一年，已经过的科目也作废。",
+    "why": "申领规定。原讲义写「123 号令」是旧称呼，现行依据是申领和使用规定。",
+    "trust": "official",
+    "source": "《机动车驾驶证申领和使用规定》",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-submit",
+    "kind": "rule",
+    "claim": "交卷要点「确定交卷」。",
+    "why": "点返回不等于交卷。社区流程写明要确认。",
+    "trust": "community",
+    "source": "kb/extracts/exam-hall.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-pass-print",
+    "kind": "rule",
+    "claim": "≥90：去成绩打印处签字盖章再走。",
+    "why": "科四合格还要去候考厅电子签名。科一按打印处走。",
+    "trust": "community",
+    "source": "kb/extracts/exam-hall.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-second",
+    "kind": "rule",
+    "claim": "没过 90，回分配处说「考第二次」，重新抽座位。不合格不打成绩单。",
+    "why": "当天补考换座位，不是坐原地再开一局。",
+    "trust": "community",
+    "source": "kb/extracts/exam-hall.md",
+    "lesson": "01",
+    "c2": false
+  },
+  {
+    "id": "k1-01-c2-no-clutch",
+    "kind": "rule",
+    "claim": "C2 是小型自动挡，科一卷不用单独啃离合器和档位操作。",
+    "why": "准驾 C2。理论按小车组卷，大客车制动那些不是我的重点。",
+    "trust": "official",
+    "source": "申领规定准驾车型",
+    "lesson": "01",
+    "c2": true
+  },
+  {
+    "id": "k1-x-c2-no-slope",
+    "kind": "rule",
+    "claim": "C2 科目二不考坡道定点。",
+    "why": "东方时尚 C2 场地四项：倒车入库、侧方、曲线、直角。",
+    "trust": "school",
+    "source": "journal/process.md",
+    "lesson": null,
+    "c2": true
+  },
+  {
+    "id": "k1-x-c2-k3-gap",
+    "kind": "rule",
+    "claim": "C2 科目三距科目一至少 20 天，练 2 次。",
+    "why": "东方时尚 C2 间隔和学时。C1 不是这套数。",
+    "trust": "school",
+    "source": "system/profile.md；journal/process.md",
+    "lesson": null,
+    "c2": true
+  },
+  {
+    "id": "k1-02-12",
+    "kind": "rule",
+    "claim": "12 分档：醉驾、伪造号牌、致人伤亡逃逸、高速倒车 / 逆行 / 穿越中央隔离、买卖分。",
+    "why": "记分办法顶档。饮酒未醉不是这一档。",
+    "trust": "official",
+    "source": "驾驶证记分办法；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-9",
+    "kind": "rule",
+    "claim": "9 分档：准驾不符、不挂或遮挡号牌、高速或城市快速路违法停车。",
+    "why": "口诀「不、号、停；高九停」。",
+    "trust": "official",
+    "source": "记分办法；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-6",
+    "kind": "rule",
+    "claim": "6 分档：轻微伤或财损逃逸、占用应急车道、驾驶证被扣期间开车、闯灯。",
+    "why": "口诀「微、急、留、信」。应急车道不是 12 分。",
+    "trust": "official",
+    "source": "记分办法；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-3",
+    "kind": "rule",
+    "claim": "3 分档：故障不设警告、手持电话、高速低于最低时速、不让行人 / 校车、穿插等候。",
+    "why": "口诀「警、电、低、让、插」。手持电话不是 12 分。",
+    "trust": "official",
+    "source": "记分办法；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-1",
+    "kind": "rule",
+    "claim": "1 分档：年检、禁令标志标线、会车、安全带、普通路倒车 / 掉头、非故障灯光。",
+    "why": "口诀「检、标、会、安、掉、灯」。",
+    "trust": "official",
+    "source": "记分办法；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-mn-12",
+    "kind": "mnemonic",
+    "claim": "12 分口诀：亡伪代逆酒；高速倒车 / 逆行 / 穿越。",
+    "why": "社区口诀，能对回记分办法再用来记。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-speed-lt20",
+    "kind": "rule",
+    "claim": "普通车超速不到 20%，高速和普通路都不记分。",
+    "why": "记分从 20% 起。校车、中型以上客车、危化品另算。",
+    "trust": "official",
+    "source": "记分办法",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-speed-normal",
+    "kind": "rule",
+    "claim": "普通路超速：20%–50% 记 3，50% 以上记 6。",
+    "why": "口诀「普 36」。",
+    "trust": "official",
+    "source": "记分办法",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-speed-hw",
+    "kind": "rule",
+    "claim": "高速 / 城市快速路超速：20%–50% 记 6，50% 以上记 12。",
+    "why": "口诀「高 6 满」。",
+    "trust": "official",
+    "source": "记分办法",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-mn-speed",
+    "kind": "mnemonic",
+    "claim": "普通车超速口诀：普 36，高 6 满。",
+    "why": "用来记两张表，不以口诀代替 12123。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-speed-bus",
+    "kind": "rule",
+    "claim": "校车、中型以上客车、危化品超速更严：普通路 10%–20% 记 1；高速不到 20% 也记 6。",
+    "why": "口诀「普 169，高 6 满」。和普通小车不是一张表。",
+    "trust": "official",
+    "source": "记分办法；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-overload-bus",
+    "kind": "rule",
+    "claim": "校车、公路 / 旅游客运超员：不到 20% 记 6，≥20% 记 12。",
+    "why": "客运超员顶档来得快。其他客车按座位数和超员比例另算。",
+    "trust": "official",
+    "source": "记分办法；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-overload-other",
+    "kind": "rule",
+    "claim": "其他客车超员：7 座以上 6 / 9 / 12，7 座以下 3 / 6 / 12（按 20%–50% / 50%–100% / ≥100%）。",
+    "why": "和校车那档不要混。C2 日常开小车，题里仍会考。",
+    "trust": "official",
+    "source": "记分办法；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-overweight",
+    "kind": "rule",
+    "claim": "货车超重：不到 30% 记 1，30%–50% 记 3，≥50% 记 6。",
+    "why": "超重起点比超员低，但顶档是 6 不是 12。",
+    "trust": "official",
+    "source": "记分办法；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-fatigue-rest",
+    "kind": "rule",
+    "claim": "连续驾驶 4 小时，休息不少于 20 分钟。",
+    "why": "实施条例。超时叫疲劳驾驶。",
+    "trust": "official",
+    "source": "《道路交通安全法实施条例》",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-fatigue-score",
+    "kind": "rule",
+    "claim": "中型以上客车疲劳记 9，货车疲劳记 3。",
+    "why": "社区表。和 12123 对不上听 12123。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-reduce-cap",
+    "kind": "rule",
+    "claim": "一个记分周期学法减分最多减 6 分。",
+    "why": "减满就停，不是无限刷。",
+    "trust": "official",
+    "source": "学法减分规定；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-reduce-111",
+    "kind": "mnemonic",
+    "claim": "公益 111：满 1 小时 = 1 次减 1 分。",
+    "why": "三个数字都是 1。",
+    "trust": "official",
+    "source": "学法减分；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-reduce-112",
+    "kind": "mnemonic",
+    "claim": "现场学习 112：学 1 小时并考试通过 = 减 2 分。",
+    "why": "1 小时、1 次考、减 2。",
+    "trust": "official",
+    "source": "学法减分；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-reduce-331",
+    "kind": "mnemonic",
+    "claim": "网上学习 331：3 天内累计 30 分钟并考试通过 = 减 1 分。",
+    "why": "3 天、30 分钟、减 1。",
+    "trust": "official",
+    "source": "学法减分；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-02-c2-only-auto",
+    "kind": "rule",
+    "claim": "C2 只能开小型自动挡，18 岁以上，不能开 C1 手动挡。准驾不符记 9 分。",
+    "why": "准驾车型向下兼容：C1 能开 C2 / C3 / C4，C2 不能往上开。",
+    "trust": "official",
+    "source": "申领规定",
+    "lesson": "02",
+    "c2": true
+  },
+  {
+    "id": "k1-02-c1-down",
+    "kind": "rule",
+    "claim": "C1 能向下开 C2 / C3 / C4。",
+    "why": "准驾向下兼容。上车只记自己的 C2。",
+    "trust": "official",
+    "source": "申领规定；kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": true
+  },
+  {
+    "id": "k1-02-mn-permit",
+    "kind": "mnemonic",
+    "claim": "人排 1（A1 大客、B1 中客），货排 2（A2 牵引、B2 大货）。",
+    "why": "社区记准驾代号。完整年龄表见原 PDF，上课只记 C2。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "02",
+    "c2": false
+  },
+  {
+    "id": "k1-03-default-speed",
+    "kind": "rule",
+    "claim": "没限速牌时：城市单车道 30、多车道 50；公路单车道 40、多车道 70。",
+    "why": "实施条例默认最高时速。有牌子听牌子。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-mn-3547",
+    "kind": "mnemonic",
+    "claim": "没牌子限速口诀：城 35、公 47。",
+    "why": "城市 30/50，公路 40/70。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-no-city-hint",
+    "kind": "pit",
+    "claim": "题干既没写城也没写公，社区常按 30 来。",
+    "why": "应试捷径，不是法规。有牌子仍听牌子，和 12123 对不上听 12123。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-vis200",
+    "kind": "rule",
+    "claim": "高速能见度不到 200 米：车速不超过 60，跟车不少于 100 米。",
+    "why": "实施条例能见度三档第一档。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-vis100",
+    "kind": "rule",
+    "claim": "高速能见度不到 100 米：车速不超过 40，跟车不少于 50 米。",
+    "why": "第二档。不要和 60/100 混。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-vis50",
+    "kind": "rule",
+    "claim": "高速能见度不到 50 米：车速不超过 20，并从最近出口离开。",
+    "why": "不是降到 40 接着开。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-mn-vis",
+    "kind": "mnemonic",
+    "claim": "能见度口诀 261 / 145 / 52。",
+    "why": "200→60/100，100→40/50，50→20 离开。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-park50",
+    "kind": "rule",
+    "claim": "交叉路口、铁路道口、急弯、不足 4 米窄路、窄桥、陡坡、隧道，50 米以内不准停。",
+    "why": "口 5。这组是 50 不是 30。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-park30",
+    "kind": "rule",
+    "claim": "公交站、消防队、加油站，30 米以内不准停。",
+    "why": "站 3。不要写成 50。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-mn-park",
+    "kind": "mnemonic",
+    "claim": "停车距离口诀：口 5 站 3。",
+    "why": "路口隧道那组 50 米，车站油站那组 30 米。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-03-warn-dist",
+    "kind": "rule",
+    "claim": "故障警告标志：普通路车后 50–100 米，高速 150 米以外。",
+    "why": "实施条例。两套距离不要并成一个数。",
+    "trust": "official",
+    "source": "实施条例第 60、82 条",
+    "lesson": "03",
+    "c2": false
+  },
+  {
+    "id": "k1-04-colors",
+    "kind": "rule",
+    "claim": "黄三角警告，红圈禁止，蓝牌指示或指路，黑杠解除限制。",
+    "why": "先认颜色再认图形。",
+    "trust": "official",
+    "source": "道路交通标志标线国标",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-8stop",
+    "kind": "rule",
+    "claim": "八边形「停」= 停车让行。倒三角「让」= 减速让行，不是停死。",
+    "why": "口诀 8 停 3 减。形状不同，动作不同。",
+    "trust": "official",
+    "source": "标志国标",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-mn-8-3",
+    "kind": "mnemonic",
+    "claim": "8 停 3 减。",
+    "why": "八边形停，倒三角减速让。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-curve",
+    "kind": "mnemonic",
+    "claim": "弯道标志：一急、二反、三连续。",
+    "why": "一个弯是急弯，两个反向，三个以上连续弯。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-fat-arrow",
+    "kind": "mnemonic",
+    "claim": "会车让行：箭头谁胖谁先走（粗箭头优先）。",
+    "why": "粗的那边先行，细的让。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-hand-stop",
+    "kind": "rule",
+    "claim": "交警左手举过头顶、掌心向前：停车等待。",
+    "why": "能对回标准动作。",
+    "trust": "official",
+    "source": "交通警察手势信号规范；kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-hand-straight",
+    "kind": "rule",
+    "claim": "交警两臂平伸成一条线：直行。",
+    "why": "不是减速。减速是右手从上往下摆。",
+    "trust": "official",
+    "source": "手势信号规范",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-hand-slow",
+    "kind": "rule",
+    "claim": "交警右手从上往下挥：减速慢行。",
+    "why": "右掌心向下也是减速。左掌心向下是左转待转。",
+    "trust": "official",
+    "source": "手势信号规范；kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-hand-face",
+    "kind": "mnemonic",
+    "claim": "哪边脸朝你就往哪边指；哪只手摆往哪边转。",
+    "why": "社区记转向手势。以标准动作为准。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-hand-curb",
+    "kind": "rule",
+    "claim": "右手上举、左手摆：靠边停车。",
+    "why": "和「左手举过头顶停车等待」不是同一手。",
+    "trust": "official",
+    "source": "手势信号规范；kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-hand-palm",
+    "kind": "mnemonic",
+    "claim": "掌心对着你 → 停；胳膊平伸 → 直行。",
+    "why": "正面看动作时先看掌心和胳膊。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-beam",
+    "kind": "mnemonic",
+    "claim": "直远斜近：光束平射是远光，斜下是近光。",
+    "why": "辨认图标，不是蒙题。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-fog",
+    "kind": "mnemonic",
+    "claim": "前雾灯绿、后雾灯黄。",
+    "why": "口诀前绿后黄。后雾灯容易晃后面的人。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-position-lamp",
+    "kind": "pit",
+    "claim": "示廓 / 位置灯常常成对出现。",
+    "why": "辨认时别只盯一盏。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-gauges",
+    "kind": "pit",
+    "claim": "转速表数字小（到 8），速度表数字大（到 220）。",
+    "why": "两块表别认反。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-bang",
+    "kind": "rule",
+    "claim": "仪表感叹号 (!) 是制动系统异常。",
+    "why": "不是普通提示。亮了先当刹车有问题。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-p",
+    "kind": "rule",
+    "claim": "仪表 (P) 是手刹 / 驻车制动。",
+    "why": "和制动感叹号不是同一个灯。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-abbr-brake",
+    "kind": "rule",
+    "claim": "EBA / EBD / AEB 都跟制动有关。",
+    "why": "紧急制动辅助、制动力分配、自动紧急制动。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-abbr-more",
+    "kind": "rule",
+    "claim": "LDW 车道偏离；ACC / CCS 巡航；FCW 前碰预警；BSD / BSA 盲点；ESP 车身稳定；TMC / TSR 交通信息 / 标志；ALC / LCA 变道；TCS 牵引力；GPS 导航；AFS 随动转向；胎压看 B（防爆）。",
+    "why": "新增英文缩写题。课里先记制动和预警，其余进原子备查。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-meet-low",
+    "kind": "rule",
+    "claim": "夜间会车应当改用近光灯。",
+    "why": "远光会晃对面。实施条例。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "05",
+    "c2": false
+  },
+  {
+    "id": "k1-05-yellow-go",
+    "kind": "rule",
+    "claim": "黄灯亮时，已越过停止线的可以继续通行。",
+    "why": "实施条例。没过线的应当停在线外。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "05",
+    "c2": false
+  },
+  {
+    "id": "k1-05-yellow-stop",
+    "kind": "pit",
+    "claim": "黄灯亮了还没过线，不能加速抢过去。",
+    "why": "没过线停在线外。抢黄灯是错的。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "05",
+    "c2": false
+  },
+  {
+    "id": "k1-05-dash",
+    "kind": "rule",
+    "claim": "白色虚线，确认安全后可以跨越变道。",
+    "why": "虚线可跨，实线不可跨。",
+    "trust": "official",
+    "source": "标志标线国标",
+    "lesson": "05",
+    "c2": false
+  },
+  {
+    "id": "k1-05-solid",
+    "kind": "pit",
+    "claim": "白色实线不能跨越变道，打转向灯也不行。",
+    "why": "打灯不是通行证。",
+    "trust": "official",
+    "source": "标志标线国标",
+    "lesson": "05",
+    "c2": false
+  },
+  {
+    "id": "k1-05-ped",
+    "kind": "rule",
+    "claim": "行经人行横道应当减速；行人正在通过，停车让行。",
+    "why": "安全法。人还在线上，车先停。",
+    "trust": "official",
+    "source": "道路交通安全法",
+    "lesson": "05",
+    "c2": false
+  },
+  {
+    "id": "k1-05-red-right",
+    "kind": "rule",
+    "claim": "红灯时，没有被禁止的可以在不妨碍被放行交通的情况下右转。有红色箭头灯或禁转标志必须停。",
+    "why": "不是「自己觉得不影响就可以转」。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "05",
+    "c2": false
+  },
+  {
+    "id": "k1-05-overtake-left",
+    "kind": "rule",
+    "claim": "超车从左侧。不要从右边钻。",
+    "why": "实施条例。右侧超是违法。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "05",
+    "c2": false
+  },
+  {
+    "id": "k1-06-drink",
+    "kind": "rule",
+    "claim": "饮酒后不得驾驶机动车。血液酒精 20–80 mg/100ml 是饮酒驾驶，≥80 是醉驾，醉驾是犯罪。",
+    "why": "自己觉得没醉不算数。罚款档以安全法为准。",
+    "trust": "official",
+    "source": "道路交通安全法",
+    "lesson": "06",
+    "c2": false
+  },
+  {
+    "id": "k1-06-run",
+    "kind": "rule",
+    "claim": "造成交通事故后逃逸，尚不构成犯罪的吊销驾驶证；构成犯罪的还不得再取得驾驶证。",
+    "why": "不是扣几分的事。",
+    "trust": "official",
+    "source": "道路交通安全法",
+    "lesson": "06",
+    "c2": false
+  },
+  {
+    "id": "k1-06-intern-hw",
+    "kind": "rule",
+    "claim": "实习期上高速，须由持相应或更高准驾车型驾驶证 3 年以上的人陪同。",
+    "why": "C2 一个人上高速不行。",
+    "trust": "official",
+    "source": "申领规定",
+    "lesson": "06",
+    "c2": true
+  },
+  {
+    "id": "k1-06-coma",
+    "kind": "rule",
+    "claim": "昏迷先看呼吸和脉搏；搬运用侧卧，不仰卧。",
+    "why": "仰卧容易让分泌物进气管。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "06",
+    "c2": false
+  },
+  {
+    "id": "k1-06-bone",
+    "kind": "rule",
+    "claim": "骨折先固定，硬担架平移，通常 3–4 人。",
+    "why": "不要用软担架拖，也不要用麻绳捆。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "06",
+    "c2": false
+  },
+  {
+    "id": "k1-06-bleed",
+    "kind": "rule",
+    "claim": "失血先止血。",
+    "why": "血止不住，后面的搬运都来不及。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "06",
+    "c2": false
+  },
+  {
+    "id": "k1-06-burn",
+    "kind": "rule",
+    "claim": "烧伤先降温；口渴喝淡盐水，不灌白开水；水疱用保鲜膜隔离；不用麻绳包扎。",
+    "why": "社区急救口诀，能对回常识。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "06",
+    "c2": false
+  },
+  {
+    "id": "k1-06-poison",
+    "kind": "rule",
+    "claim": "中毒先脱离现场，转到空气新鲜的地方。",
+    "why": "人不离开毒源，后面的救护没用。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": "06",
+    "c2": false
+  },
+  {
+    "id": "k1-06-five",
+    "kind": "rule",
+    "claim": "车上要带：驾驶证、行驶证、检验合格标志、保险标志、号牌。",
+    "why": "五样少一样都是没带齐。",
+    "trust": "official",
+    "source": "道路交通安全法；kb/extracts/kemu1-koujue.md",
+    "lesson": "06",
+    "c2": false
+  },
+  {
+    "id": "k1-06-fault",
+    "kind": "rule",
+    "claim": "故障车开双闪，并在来车方向设警告标志。",
+    "why": "普通路 50–100 米，高速 150 米以外。",
+    "trust": "official",
+    "source": "实施条例",
+    "lesson": "06",
+    "c2": false
+  },
+  {
+    "id": "k1-x-discard-yingdang",
+    "kind": "discard",
+    "claim": "判断题看见「应当」「不得」「尽快」就打对或打错。",
+    "why": "某一版题的统计规律，例外太多。不进课、不进练习。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": null,
+    "c2": false
+  },
+  {
+    "id": "k1-x-discard-12guess",
+    "kind": "discard",
+    "claim": "判断题看见 12 分就打对。",
+    "why": "应急车道、未悬号牌等会落到别的档。不收。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": null,
+    "c2": false
+  },
+  {
+    "id": "k1-x-discard-ignition",
+    "kind": "discard",
+    "claim": "点火开关 1·4 对、2·3 错。",
+    "why": "题型规律，换一版就废。刷 12123，不要靠这套蒙。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": null,
+    "c2": false
+  },
+  {
+    "id": "k1-x-discard-round-square",
+    "kind": "discard",
+    "claim": "仪表圆错方对。",
+    "why": "统计规律，不是交规。不进练习。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": null,
+    "c2": false
+  },
+  {
+    "id": "k1-x-discard-warn150",
+    "kind": "discard",
+    "claim": "故障警告标志一律选 150 米。",
+    "why": "社区秒杀。普通路是 50–100 米，高速才是 150 米以外。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": null,
+    "c2": false
+  },
+  {
+    "id": "k1-x-discard-ghost",
+    "kind": "discard",
+    "claim": "警察正面看你、动作有残影的判断题打对。",
+    "why": "科四讲义里的题型规律，不是交规。",
+    "trust": "community",
+    "source": "kb/extracts/kemu1-koujue.md",
+    "lesson": null,
+    "c2": false
+  }
+]

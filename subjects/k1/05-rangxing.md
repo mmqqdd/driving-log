@@ -14,6 +14,8 @@ title: 5. 谁让谁
 
 **超车**：从左侧超。不要从右边钻。
 
-<Quiz src="/practice/k1-05.json" count="5" />
+**会车**：夜间改近光。让行标志上看箭头，粗的那边先走。
+
+<Quiz src="/practice/k1/05.json" />
 
 上一节：[灯、标志、手势](/subjects/k1/04-deng) · 下一节：[酒驾、逃逸、急救](/subjects/k1/06-jijiu)

@@ -27,3 +27,6 @@ node_modules/
 
 # 用户收集的原包（扫描题库、视频），只在本地
 kb/raw/
+
+# 本地 OCR 二进制
+scripts/ocr-vision

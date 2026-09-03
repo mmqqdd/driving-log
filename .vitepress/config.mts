@@ -57,6 +57,9 @@ export default defineConfig({
     'README.md',
     'AGENTS.md',
     'kb/**',
+    'subjects/kemu2.md',
+    'subjects/kemu3.md',
+    'subjects/kemu4.md',
     'node_modules/**',
     '**/_template.md',
   ],
@@ -66,8 +69,7 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '首页', link: '/' },
-      { text: '科目一', link: '/subjects/k1/' },
+      { text: '科目一训练', link: '/subjects/k1/' },
       { text: '考试记录', link: '/journal/' },
     ],
 

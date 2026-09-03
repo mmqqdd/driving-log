@@ -2,19 +2,24 @@
 
 网站给别人看。现在只突出 **科目一按节学**（`subjects/k1/`）：一小节讲完就随堂测。科二科三先不要摊在首页。
 
-不要写工具怎么用，不要提 Cursor，不要写「本知识库给 AI 用」。`kb/` 给人看的资料先不当导航，避免和课程抢视线。
+不要写工具怎么用，不要提 Cursor，不要写「本知识库给 AI 用」。`kb/` 不上网站，避免和课程抢视线。
 
 ## 目录
 
 | 路径 | 内容 | 谁维护 |
 |---|---|---|
-| `index.md` | 首页，两个入口 | 少改 |
+| `index.md` | 首页，两个入口：科目一训练、考试记录 | 少改 |
 | `journal/` | 考试记录。`process.md` 是从报名到拿证；日期文件是故事 | AI |
-| `subjects/` | 考试攻略，一科一页；`*-guide.md` 是攻略，`practice.md` 是练习 | AI 写，用户补细节 |
-| `kb/` | 资料：官方源、社区源、口诀和流程。上网站 | AI 写，给人看 |
+| `subjects/k1/` | 科目一按节课。一节一页，底下跟测 | AI 写，用户补细节 |
+| `subjects/kemu1.md` | 科目一错题 / 易混，不进 JSON | AI 写，用户补 |
+| `subjects/kemu1-guide.md`、`practice.md`、`subjects/index.md` | 短页，指向 `k1/` | 少改 |
+| `subjects/kemu2.md`–`kemu4.md` | 留文件，不上导航、不进搜索 | AI |
+| `kb/` | 资料、原子、蒸馏。不上网站 | AI 写 |
+| `kb/atoms/` | 结构化记忆。科一在 `k1.json` | AI |
+| `kb/questions/` | 500 题怎么分类。原题和配图在 `kb/raw/bank/` | AI |
 | `kb/goals/`、`kb/README.md`、`kb/extracts/pack.md` | 拆目标、工作说明。不上网站 | AI |
 | `kb/raw/` | 用户收来的 PDF / 视频原包，gitignore，不上网站 | 用户下，AI 读 |
-| `public/practice/` | 自己写的练习卡 JSON | AI |
+| `public/practice/k1/` | 按节题包 `01.json`–`06.json` | AI |
 | `system/profile.md` | 驾校、费用、进度。frontmatter 的 `profile` 是硬数据 | 用户说，AI 写 |
 | `public/images/` | 用户发来的图，网页用 `/images/文件名` 引用 | AI 拷进去 |
 
@@ -22,9 +27,9 @@
 
 用户说「今天练了 XX」「这题又错了」「教练说」「约了科目二」→ 用 `drive-log` skill。
 
-用户说「攻略」「拆解」「收集资料」「怎么过科目一」或丢来新目标 → 用 `make-guide` skill：先拆目标、收资料（官方再社区），再写攻略和练习。
+用户说「攻略」「拆解」「收集资料」「怎么过科目一」或丢来新目标 → 用 `make-guide` skill：先拆目标、收资料（官方再社区），再写课和练习。
 
-用户说「流程是这样」「科目一按这几块学」→ 写 `journal/process.md` 或对应科目攻略，不要只记成一条碎笔记。按用户自己的节奏写，不要用网上通用课表覆盖。
+用户说「流程是这样」「科目一按这几块学」→ 写 `journal/process.md` 或 `subjects/k1/` 对应课，不要只记成一条碎笔记。按用户自己的节奏写，不要用网上通用课表覆盖。
 
 ## 硬规则
 

@@ -5,9 +5,9 @@ description: 把一个学习目标拆开、收集资料、写成攻略，必要�
 
 # 从目标到攻略
 
-用户给一个目标。先拆，再收资料（最难、最重要），最后写攻略。有能练的，做成练习，不要只堆链接。
+用户给一个目标。先拆，再收资料（最难、最重要），最后写成课。有能练的，做成练习，不要只堆链接。
 
-先读 `kb/README.md`、`kb/sources-official.md`、`kb/sources-community.md`。已有同目标的 `kb/goals/<id>.md` 就打开接着改，不要另起一套。
+先读 `kb/README.md`、`kb/sources-official.md`、`kb/sources-community.md`。已有同目标的 `kb/goals/<id>.md` 就打开接着改，不要另起一套。科目一已有 `subjects/k1/` 和 `kb/atoms/k1.json`，接着补，不要再写一套 `kemu1-guide` 正文。
 
 ## 工作流程
 
@@ -15,8 +15,8 @@ description: 把一个学习目标拆开、收集资料、写成攻略，必要�
 - [ ] 1. 写清目标（谁、在哪、怎样算做成）
 - [ ] 2. 拆成可检查的步骤
 - [ ] 3. 收集资料：官方公开 → 驾校指定 → UP/博主
-- [ ] 4. 写进知识库
-- [ ] 5. 写成攻略（给人看的）
+- [ ] 4. 写进知识库（蒸馏 + 原子）
+- [ ] 5. 写成课（给人看的）
 - [ ] 6. 能练的做成练习卡
 ```
 
@@ -53,9 +53,11 @@ description: 把一个学习目标拆开、收集资料、写成攻略，必要�
 
 **不要收**
 
-- 网盘「完整题库.zip」
-- 把商业 App 题库原文搬进仓库
+- 网盘「完整题库.zip」当官方
+- 把商业题库原文搬进 `public/` 或 git
 - 销售/教练真名、聊天截图（隐私）
+
+用户自己的「精选 500」扫描件：抽进 `kb/raw/bank/`（本地），分类写进 `kb/questions/`。
 
 ### 4. 写进知识库
 
@@ -66,25 +68,30 @@ description: 把一个学习目标拆开、收集资料、写成攻略，必要�
 
 目标页里用一张表：步骤 → 先看哪份 → 再看哪份。
 
-### 5. 写成攻略
+长 PDF 压进 `kb/extracts/`。能上课的规矩拆进 `kb/atoms/<科>.json`（`id, kind, claim, why, trust, source, lesson, c2`）。蒙题法标 `discard`，不进课、不进题。
 
-给人看的页面在 `subjects/`、`journal/` 或 `kb/`（资料：来源 + 口诀）。口吻是故事，不是「怎么样 / 记下来」。
+`kb/**` 不上网站。不要写 Cursor、不要写「本知识库给 AI 用」。
 
-攻略里写：上场什么样、按什么顺序学、去哪练、依据是哪份官方文件。  
+### 5. 写成课
+
+科目一写进 `subjects/k1/`，一节一件事，正文尽量不超过两屏。口吻是故事，不是「怎么样 / 记下来」。
+
+课里写：上场什么样、按什么顺序学、去哪练、依据是哪份官方文件。  
 社区口诀可以出现，但旁边能指回官方或 12123。
 
-`kb/index.md`、`sources-*.md`、`extracts/` 上网站。`kb/README.md`、`goals/`、`extracts/pack.md`、`raw/` 不上。  
-网站上不要写 Cursor、不要写「本知识库给 AI 用」。
+旧页 `kemu1-guide.md`、`practice.md`、`subjects/index.md` 只重定向到 `k1/`。科二科三以后套 `subjects/k2/` + `public/practice/k2/`。
 
 ### 6. 练习
 
-自己根据**公开法规**写成判断/选择，放到 `public/practice/<id>.json`，页面用 `<Quiz src="/practice/<id>.json" />`。
+**随堂测**自己根据公开法规和原子写，放到 `public/practice/k1/0x.json`，课里用 `<Quiz src="/practice/k1/01.json" />`。Quiz 默认随机抽 5 道。每包至少 12 道。
 
 字段：`q`、`type`（`tf` | `choice`）、`answer`、`why`、可选 `options`。  
-`why` 写法规意思，不写「宝典第 x 题」。  
-用户错过的原题：压缩进科目笔记，不进 JSON。
+`why` 写法规意思，不写「宝典第 x 题」。
+
+**精选 500**抽进 `kb/raw/bank/k1/`（题 + 裁图），分类账在 `kb/questions/`。不上 git、不上 `public/`。模拟考以后从这份库抽，按 `ga`；`has_image` 的带图；`tip_kind=discard` 不用。  
+用户错过的原题：压缩进 `subjects/kemu1.md` 和对应 `k1/` 课。
 
 ## 对话里怎么回
 
-说清楚：拆成了哪几步、官方收了什么、社区收了什么、攻略和练习在哪。  
+说清楚：拆成了哪几步、官方收了什么、社区收了什么、课和练习在哪。  
 整包题库不公开就直说，不要假装已经下载了 2026 全库。

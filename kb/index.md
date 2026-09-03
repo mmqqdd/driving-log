@@ -26,4 +26,4 @@ title: 资料
 - [科目三上场和评判](/kb/extracts/kemu3-judging) —— 听到什么做什么
 - [科目四口诀](/kb/extracts/kemu4-koujue) —— 50 题卷面、文明驾驶、灯光
 
-完整题库国家不公开整包。刷题仍走 [科目一攻略](/subjects/kemu1-guide) 里那两条：东方时尚全真库，和交管 12123 模拟。
+完整题库国家不公开整包。刷题仍走 [科目一训练](/subjects/k1/) 里那两条：东方时尚全真库，和交管 12123 模拟。原子在 `kb/atoms/k1.json`。
