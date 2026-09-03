@@ -45,8 +45,8 @@ function group(
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: '我的驾考笔记',
-  description: '练车日志、科目要点、易错题 —— 说一句就记下来',
+  title: '我的驾考全过程',
+  description: '北京东方时尚驾考时间线、各科资料、学习笔记和踩过的坑',
 
   srcExclude: ['README.md', 'AGENTS.md', 'node_modules/**', '**/_template.md'],
 
@@ -56,13 +56,15 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '科目', link: '/subjects/' },
-      { text: '练车日志', link: '/journal/' },
+      { text: '时间线', link: '/journal/' },
+      { text: '科目笔记', link: '/subjects/' },
+      { text: '踩过的坑', link: '/system/pits' },
       {
-        text: '系统',
+        text: '资料',
         items: [
-          { text: '这套笔记怎么用', link: '/system/how-it-works' },
-          { text: '我的驾考档案', link: '/system/profile' },
+          { text: '学习路线', link: '/system/route' },
+          { text: '驾考档案', link: '/system/profile' },
+          { text: '东方时尚', link: '/system/school' },
         ],
       },
     ],
@@ -72,8 +74,10 @@ export default defineConfig({
         {
           text: '系统',
           items: [
-            { text: '这套笔记怎么用', link: '/system/how-it-works' },
-            { text: '我的驾考档案', link: '/system/profile' },
+            { text: '学习路线', link: '/system/route' },
+            { text: '驾考档案', link: '/system/profile' },
+            { text: '东方时尚', link: '/system/school' },
+            { text: '踩过的坑', link: '/system/pits' },
           ],
         },
       ],
@@ -82,7 +86,7 @@ export default defineConfig({
         ...group('按科目', 'subjects'),
       ],
       '/journal/': [
-        { text: '练车日志', items: [{ text: '全部日志', link: '/journal/' }] },
+        { text: '时间线', items: [{ text: '全部记录', link: '/journal/' }] },
         ...group('按日期', 'journal', { desc: true }),
       ],
     },
@@ -108,7 +112,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '我的驾考笔记 · 说一句就记下来',
+      message: '我的驾考全过程 · 时间线 / 资料 / 笔记 / 坑',
       copyright: '© 2026 孟强定',
     },
   },
