@@ -6,35 +6,40 @@
       "q": "交警左手举过头顶、掌心向前，是停车等待。",
       "type": "tf",
       "answer": true,
-      "why": "左手举过头顶 → 停。两臂平伸成一条线 → 直行。右手从上往下挥 → 减速慢行。"
+      "why": "左手举过头顶 → 停。两臂平伸成一条线 → 直行。右手从上往下挥 → 减速慢行。",
+      "image": "/images/k1/police-stop.jpg"
     },
     {
       "id": "police-straight",
       "q": "交警两臂向两侧平伸，是减速慢行。",
       "type": "tf",
       "answer": false,
-      "why": "两臂平伸是直行。减速是右手从上往下摆。"
+      "why": "两臂平伸是直行。减速是右手从上往下摆。",
+      "image": "/images/k1/police-straight.jpg"
     },
     {
       "id": "highbeam",
       "q": "仪表上光束画成水平射出，表示远光灯。",
       "type": "tf",
       "answer": true,
-      "why": "直远斜近：光束平射是远光，斜着射向地面是近光。"
+      "why": "直远斜近：光束平射是远光，斜着射向地面是近光。",
+      "image": "/images/k1/high-beam.svg"
     },
     {
       "id": "fog",
       "q": "前雾灯标志一般是绿色，后雾灯一般是黄色。",
       "type": "tf",
       "answer": true,
-      "why": "社区口诀「前绿后黄」。后雾灯容易晃后面的人，颜色单独标出来。"
+      "why": "社区口诀「前绿后黄」。后雾灯容易晃后面的人，颜色单独标出来。",
+      "image": "/images/k1/fog-front.svg"
     },
     {
       "id": "fog-dir",
       "q": "仪表上绿色、光线向左的雾灯图标，是后雾灯。",
       "type": "tf",
       "answer": false,
-      "why": "绿、向左是前雾灯。后雾灯是黄、向右。题干写「后雾灯」但图是前雾灯，选错。"
+      "why": "绿、向左是前雾灯。后雾灯是黄、向右。题干写「后雾灯」但图是前雾灯，选错。",
+      "image": "/images/k1/fog-front.svg"
     },
     {
       "id": "curb",
@@ -54,14 +59,16 @@
         "发动机故障"
       ],
       "answer": "制动系统异常",
-      "why": "(!) 是制动系统。手刹是 (P)。两个灯不要认成一个。"
+      "why": "(!) 是制动系统。手刹是 (P)。两个灯不要认成一个。",
+      "image": "/images/k1/brake.svg"
     },
     {
       "id": "p-brake",
       "q": "仪表上的 (P) 表示手刹 / 驻车制动。",
       "type": "tf",
       "answer": true,
-      "why": "P 是 Parking。和制动感叹号不是同一个灯。"
+      "why": "P 是 Parking。和制动感叹号不是同一个灯。",
+      "image": "/images/k1/park-brake.svg"
     },
     {
       "id": "eba",
@@ -82,21 +89,55 @@
       "q": "交警左手抓着长杆、人正对你，是左转弯待转。",
       "type": "tf",
       "answer": true,
-      "why": "左手在杆上、还没放下来转，是待转，不是已经在左转。"
+      "why": "左手在杆上、还没放下来转，是待转，不是已经在左转。",
+      "image": "/images/k1/police-wait-turn.jpg"
     },
     {
       "id": "change",
       "q": "交警右手捂在胸口，是变道信号。",
       "type": "tf",
       "answer": true,
-      "why": "右手捂心口 → 变道。和剪刀手转弯不是同一下。"
+      "why": "右手捂心口 → 变道。和剪刀手转弯不是同一下。",
+      "image": "/images/k1/police-change.jpg"
     },
     {
       "id": "sun",
       "q": "像太阳一样的灯光图标，是灯光总开关。",
       "type": "tf",
       "answer": true,
-      "why": "四周放射的圆是总开关，不是雾灯。"
+      "why": "四周放射的圆是总开关，不是雾灯。",
+      "image": "/images/k1/master-light.svg"
+    },
+    {
+      "id": "right-turn",
+      "q": "交警左臂前伸、右臂再摆，是右转弯。",
+      "type": "tf",
+      "answer": true,
+      "why": "伸出去的是左手，剪刀口朝右。",
+      "image": "/images/k1/police-right.jpg"
+    },
+    {
+      "id": "slow-vs-wait",
+      "q": "只动右手、掌心向下上下摆，是左转弯待转。",
+      "type": "tf",
+      "answer": false,
+      "why": "只动右手是减速。待转那只左手还搭在杆上。",
+      "image": "/images/k1/police-slow.jpg"
+    },
+    {
+      "id": "rpm8",
+      "q": "表盘数字只到 8，是车速表。",
+      "type": "tf",
+      "answer": false,
+      "why": "到 8 是转速。到 200 多才是车速。"
+    },
+    {
+      "id": "night-high",
+      "q": "夜间会车应当改用远光，看清对面。",
+      "type": "tf",
+      "answer": false,
+      "why": "会车、进隧道用近光。远光晃人。",
+      "image": "/images/k1/low-beam.svg"
     }
   ]
 }

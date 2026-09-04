@@ -96,6 +96,34 @@
       "type": "tf",
       "answer": false,
       "why": "长下坡把挡挂低，用发动机拖住，以免刹车过热失效。"
+    },
+    {
+      "id": "c2-manual",
+      "q": "C2 证可以开 C1 手动挡，只要会踩离合。",
+      "type": "tf",
+      "answer": false,
+      "why": "C2 只能开自动挡。C1 可以向下开 C2，反过来不行。"
+    },
+    {
+      "id": "intern-alone",
+      "q": "C2 实习期内可以一个人上高速。",
+      "type": "tf",
+      "answer": false,
+      "why": "旁边必须有持相应或更高准驾车型驾驶证 3 年以上的人。"
+    },
+    {
+      "id": "reduce-max",
+      "q": "一个记分周期学法减分最多减 12 分。",
+      "type": "tf",
+      "answer": false,
+      "why": "一个周期最多减 6 分。"
+    },
+    {
+      "id": "abs-turn",
+      "q": "ABS 紧急制动时车轮不抱死，方向还能打。",
+      "type": "tf",
+      "answer": true,
+      "why": "不抱死才能转向。它不保证缩短干燥路面刹车距离。"
     }
   ]
 }

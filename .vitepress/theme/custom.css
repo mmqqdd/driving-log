@@ -13,7 +13,52 @@
 }
 
 .k1-pics img[src*="police-"] {
-  width: 168px;
-  max-width: 46vw;
+  width: 380px;
+  max-width: min(100%, 92vw);
   background: #fff;
+}
+
+.k1-pics.k1-sheets {
+  display: block;
+}
+
+.k1-pics.k1-sheets img {
+  width: min(100%, 560px);
+  max-width: 100%;
+  background: #e7f3fb;
+  margin: 0 0 1rem;
+}
+
+.k1-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+  gap: 0.55rem 0.45rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.k1-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+.k1-grid img {
+  width: 72px;
+  height: auto;
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+}
+
+.k1-grid figcaption {
+  margin-top: 0.2rem;
+  font-size: 0.74rem;
+  line-height: 1.25;
+  color: var(--vp-c-text-2);
+}
+
+.k1-gesture {
+  margin: 0.7rem 0 1rem;
+}
+
+.k1-gesture > p {
+  margin: 0 0 0.35rem;
 }

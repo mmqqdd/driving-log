@@ -4,7 +4,12 @@ title: 3. 超速、超员与超重
 
 # 3. 超速、超员与超重
 
-数字最多的一节。表对着题干里的「路」和「车」看，不要混用。
+表对着题干里的「路」和「车」看。红圈是最高限速，超的是这个数。
+
+<div class="k1-grid">
+<figure><img src="/images/k1/speed-max.svg" alt="最高限速" /><figcaption>最高限速</figcaption></figure>
+<figure><img src="/images/k1/speed-min.svg" alt="最低限速" /><figcaption>最低限速</figcaption></figure>
+</div>
 
 **普通车超速**（口诀「普 36，高 6 满」）：
 

@@ -8,12 +8,15 @@ title: 7. 通行与让行
 
 **红灯**：没过线的停。已经过线的，尽快安全通过。右转：没有被禁止时，可以在不妨碍被放行的人和车的情况下转。有红色箭头灯或禁转标志，停。
 
-**行人**：看见黄三角「注意行人」先减速；到了蓝底斑马线，人正在过，停车让。
+**行人**：黄三角先减速；蓝底斑马线有人在过，停车让。
 
-<p class="k1-pics">
-<img src="/images/k1/warn-ped.svg" alt="注意行人" width="96" />
-<img src="/images/k1/crosswalk.svg" alt="人行横道" width="96" />
-</p>
+<div class="k1-grid">
+<figure><img src="/images/k1/warn-ped.svg" alt="注意行人" /><figcaption>注意行人</figcaption></figure>
+<figure><img src="/images/k1/crosswalk.svg" alt="人行横道" /><figcaption>人行横道</figcaption></figure>
+<figure><img src="/images/k1/warn-child.svg" alt="注意儿童" /><figcaption>注意儿童</figcaption></figure>
+<figure><img src="/images/k1/stop.svg" alt="停车让行" /><figcaption>必须停</figcaption></figure>
+<figure><img src="/images/k1/yield.svg" alt="减速让行" /><figcaption>减速让</figcaption></figure>
+</div>
 
 **超车**：从左侧超。不要从右边钻。对面有来车、前车正在左转或掉头，不要超。
 
@@ -26,11 +29,12 @@ title: 7. 通行与让行
 
 **路口**：转弯让直行。没交通信号时，右方来车先行。
 
-**铁路道口**：看见火车头或栅栏警告标就按道口规矩走。两个红灯交替闪，停车等。一个红灯亮着也要停，不要抢过。
+**铁路道口**：看见火车头或栅栏就按道口走。两个红灯交替闪，停。一个红灯亮着也要停。
 
-<p class="k1-pics">
-<img src="/images/k1/rail.svg" alt="铁路道口" width="96" />
-</p>
+<div class="k1-grid">
+<figure><img src="/images/k1/rail.svg" alt="铁路道口" /><figcaption>铁路道口</figcaption></figure>
+<figure><img src="/images/k1/work.svg" alt="施工" /><figcaption>施工先慢</figcaption></figure>
+</div>
 
 <Quiz src="/practice/k1/07.json" />
 

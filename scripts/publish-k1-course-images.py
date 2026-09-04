@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "public/images/k1"
 TIPS = Path("/tmp/k1-tips")
 TIPS_PDF = ROOT / "kb/raw/科目一（技巧口诀+500题）/科目一2026最新电子技巧.pdf"
+ICONS_PDF = ROOT / "kb/raw/科目一（技巧口诀+500题）/最新驾考图标.pdf"
 
 
 def svg(name: str, body: str, w: int = 160, h: int = 160) -> None:
@@ -278,7 +279,7 @@ def crop_png(src: Path, dest: Path, box: tuple[float, float, float, float]) -> N
     tmp = dest.with_suffix(".png")
     pix.save(tmp)
     subprocess.run(
-        ["sips", "-s", "format", "jpeg", "-Z", "720", str(tmp), "--out", str(dest)],
+        ["sips", "-s", "format", "jpeg", "-Z", "960", str(tmp), "--out", str(dest)],
         capture_output=True,
         check=False,
     )
@@ -309,22 +310,64 @@ def crop_gestures() -> None:
     p21 = TIPS / "p21.png"
     p22 = TIPS / "p22.png"
     p23 = TIPS / "p23.png"
-    # 893x1262 @ 1.5x. Each row: two officers + 口诀; crop left officer only.
-    # stop y starts below the red「记住口诀」line.
-    crop_png(p21, OUT / "police-stop.jpg", (100, 248, 278, 458))
-    crop_png(p21, OUT / "police-straight.jpg", (95, 548, 275, 800))
-    crop_png(p21, OUT / "police-slow.jpg", (100, 830, 295, 1120))
-    crop_png(p22, OUT / "police-wait-turn.jpg", (100, 188, 295, 455))
-    crop_png(p22, OUT / "police-change.jpg", (90, 555, 258, 780))
-    crop_png(p22, OUT / "police-left.jpg", (95, 815, 285, 1105))
+    # 893x1262 @ 1.5x. Each row is one gesture: left frame + right frame + 口诀.
+    # Crop both officers together; x stops before the mnemonic text.
+    crop_png(p21, OUT / "police-stop.jpg", (88, 232, 448, 468))
+    crop_png(p21, OUT / "police-straight.jpg", (82, 528, 452, 808))
+    crop_png(p21, OUT / "police-slow.jpg", (86, 818, 458, 1132))
+    crop_png(p22, OUT / "police-wait-turn.jpg", (82, 172, 458, 468))
+    crop_png(p22, OUT / "police-change.jpg", (78, 532, 448, 792))
+    crop_png(p22, OUT / "police-left.jpg", (82, 802, 458, 1118))
     if p23.exists():
-        crop_png(p23, OUT / "police-right.jpg", (100, 500, 295, 780))
+        crop_png(p23, OUT / "police-right.jpg", (86, 488, 458, 798))
+
+
+def page_to_jpg(page: fitz.Page, dest: Path, inset: float = 10) -> None:
+    r = page.rect
+    clip = fitz.Rect(r.x0 + inset, r.y0 + inset, r.x1 - inset, r.y1 - inset)
+    pix = page.get_pixmap(matrix=fitz.Matrix(1.7, 1.7), clip=clip, alpha=False)
+    tmp = dest.with_suffix(".png")
+    pix.save(tmp)
+    subprocess.run(
+        ["sips", "-s", "format", "jpeg", "-Z", "1400", str(tmp), "--out", str(dest)],
+        capture_output=True,
+        check=False,
+    )
+    tmp.unlink(missing_ok=True)
+    print(dest.name, dest.stat().st_size // 1024, "KB")
+
+
+def publish_sign_sheets() -> None:
+    """警告 / 禁令图册来自「最新驾考图标」；指示那页来自电子技巧第27/35。"""
+    if ICONS_PDF.exists():
+        doc = fitz.open(ICONS_PDF)
+        for i, name in (
+            (4, "signs-warn-1.jpg"),
+            (5, "signs-warn-2.jpg"),
+            (6, "signs-warn-3.jpg"),
+            (7, "signs-warn-4.jpg"),
+            (0, "signs-ban-1.jpg"),
+            (1, "signs-ban-2.jpg"),
+            (2, "signs-ban-3.jpg"),
+        ):
+            page_to_jpg(doc[i], OUT / name)
+        doc.close()
+    else:
+        print("skip sign sheets: missing 最新驾考图标.pdf")
+    if TIPS_PDF.exists():
+        doc = fitz.open(TIPS_PDF)
+        # 0-index 27 = 印「第27/35」指示标志
+        page_to_jpg(doc[27], OUT / "signs-guide.jpg", inset=6)
+        doc.close()
+    else:
+        print("skip signs-guide: missing 电子技巧 PDF")
 
 
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     write_svgs()
     crop_gestures()
+    publish_sign_sheets()
     print("course images ->", OUT)
     return 0
 

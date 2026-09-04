@@ -13,13 +13,13 @@ title: 4. 限速与停车
 
 有限速牌，听牌子。题干既没写「城」也没写「公」，社区常按城市单车道 30；仍以题面和 12123 为准。
 
-高速牌子：红圈是**最高**，蓝圈是**最低**。黑杠是解除限速。
+高速牌子：红圈**最高**，蓝圈**最低**，黑杠解除。
 
-<p class="k1-pics">
-<img src="/images/k1/speed-max.svg" alt="红圈最高时速 40" width="104" />
-<img src="/images/k1/speed-min.svg" alt="蓝圈最低时速 50" width="104" />
-<img src="/images/k1/speed-end.svg" alt="黑杠解除限速 40" width="104" />
-</p>
+<div class="k1-grid">
+<figure><img src="/images/k1/speed-max.svg" alt="最高时速" /><figcaption>红高</figcaption></figure>
+<figure><img src="/images/k1/speed-min.svg" alt="最低时速" /><figcaption>蓝低</figcaption></figure>
+<figure><img src="/images/k1/speed-end.svg" alt="解除限速" /><figcaption>黑解除</figcaption></figure>
+</div>
 
 高速能见度差（口诀 261 / 145 / 52）：
 
@@ -36,10 +36,12 @@ title: 4. 限速与停车
 
 停车牌子和「口 5 站 3」不是一回事。蓝底红圈一道斜杠：禁止长时间停放，临停可以。蓝底红叉：停都不行。口 5 站 3 是路口、车站这些地方附近的距离，没牌子也按这个算。
 
-<p class="k1-pics">
-<img src="/images/k1/no-long-park.svg" alt="禁止长时间停放" width="96" />
-<img src="/images/k1/no-park.svg" alt="禁止停车" width="96" />
-</p>
+<div class="k1-grid">
+<figure><img src="/images/k1/no-long-park.svg" alt="禁长停" /><figcaption>禁长停</figcaption></figure>
+<figure><img src="/images/k1/no-park.svg" alt="禁止停车" /><figcaption>禁止停车</figcaption></figure>
+<figure><img src="/images/k1/curve-1.svg" alt="急弯" /><figcaption>急弯口 5</figcaption></figure>
+<figure><img src="/images/k1/rail.svg" alt="铁路道口" /><figcaption>道口口 5</figcaption></figure>
+</div>
 
 故障车开双闪，再在来车方向放警告标志：普通路 **50–100 米**，高速 **150 米以外**。社区讲义爱写「一律选 150」，普通路对不上实施条例。
 

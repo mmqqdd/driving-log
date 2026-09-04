@@ -3,7 +3,7 @@ import { computed, ref, watch } from 'vue'
 
 const props = defineProps({
   src: { type: String, required: true },
-  count: { type: [Number, String], default: 5 },
+  count: { type: [Number, String], default: 10 },
 })
 
 const pack = ref(null)
@@ -84,12 +84,15 @@ function label(val) {
   <div class="quiz" v-else-if="!pack">加载练习…</div>
   <div class="quiz" v-else-if="done">
     <p class="quiz-score">{{ score }} / {{ total }}</p>
-    <p>{{ score === total ? '这节过了。' : '错的看完解析，点下面再抽一组。' }}</p>
-    <button type="button" class="quiz-btn primary" @click="deal">再抽一组</button>
+    <p>{{ score === total ? '这节过了。' : '错的看完解析，再来一组。' }}</p>
+    <button type="button" class="quiz-btn primary" @click="deal">再来 {{ total }} 道</button>
   </div>
   <div class="quiz" v-else-if="item">
     <p class="quiz-meta">{{ pack.title }} · 随机 {{ i + 1 }} / {{ total }}</p>
     <p class="quiz-q">{{ item.q }}</p>
+    <p v-if="item.image" class="quiz-pic">
+      <img :src="item.image" :alt="item.q" />
+    </p>
     <div class="quiz-opts">
       <button
         v-if="item.type === 'tf'"
@@ -144,6 +147,15 @@ function label(val) {
   margin: 0 0 1rem;
   font-size: 1.05rem;
   line-height: 1.6;
+}
+.quiz-pic {
+  margin: 0 0 1rem;
+}
+.quiz-pic img {
+  max-width: min(100%, 280px);
+  height: auto;
+  border-radius: 8px;
+  background: #fff;
 }
 .quiz-opts {
   display: flex;

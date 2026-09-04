@@ -16,6 +16,14 @@ title: 2. 违法记分
 
 口诀只帮分组：**亡伪代逆酒**（12），**不号停**（9），**微急留信**（6），**警电低让插**（3），**检标会安掉灯**（1）。
 
+故障不设警告记 3 分，闯禁令标记 1 分：
+
+<div class="k1-grid">
+<figure><img src="/images/k1/warn-triangle.svg" alt="故障警告标志" /><figcaption>故障警告</figcaption></figure>
+<figure><img src="/images/k1/no-pass.svg" alt="禁令标志" /><figcaption>禁令标</figcaption></figure>
+<figure><img src="/images/k1/stop.svg" alt="停车让行" /><figcaption>不让行也记分</figcaption></figure>
+</div>
+
 同一件事，路不一样，分不一样：普通路逆行记 **3**，高速逆行记 **12**。不要看见「逆行」就填 12。
 
 买卖分给个人：记 12 分，还要罚款。组织卖分罚得更重。数字以现行记分办法为准。

@@ -83,7 +83,7 @@ description: 把一个学习目标拆开、收集资料、写成攻略，必要�
 
 ### 6. 练习
 
-**随堂测**自己根据公开法规和原子写，放到 `public/practice/k1/0x.json`，课里用 `<Quiz src="/practice/k1/01.json" />`。Quiz 默认随机抽 5 道。每包至少 12 道。
+**随堂测**自己根据公开法规和原子写，放到 `public/practice/k1/0x.json`，课里用 `<Quiz src="/practice/k1/01.json" />`。Quiz 默认随机抽 10 道，做完再抽一组。每包至少 16 道。可选 `image`。
 
 字段：`q`、`type`（`tf` | `choice`）、`answer`、`why`、可选 `options`。  
 `why` 写法规意思，不写「宝典第 x 题」。

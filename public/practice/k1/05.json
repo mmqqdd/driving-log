@@ -6,14 +6,16 @@
       "q": "八边形、中间一个「停」字，是停车让行。",
       "type": "tf",
       "answer": true,
-      "why": "八边形「停」= 停车让行。倒三角「让」= 减速让行。口诀「8 停 3 减」。"
+      "why": "八边形「停」= 停车让行。倒三角「让」= 减速让行。口诀「8 停 3 减」。",
+      "image": "/images/k1/stop.svg"
     },
     {
       "id": "yield3",
       "q": "倒三角、中间一个「让」字，是停车让行。",
       "type": "tf",
       "answer": false,
-      "why": "倒三角是减速让行，不是停车让行。看见八边形「停」才是必须停。"
+      "why": "倒三角是减速让行，不是停车让行。看见八边形「停」才是必须停。",
+      "image": "/images/k1/yield.svg"
     },
     {
       "id": "yellow",
@@ -34,56 +36,64 @@
       "q": "会车让行标志上，箭头粗的那边先走。",
       "type": "tf",
       "answer": true,
-      "why": "社区口诀「谁胖谁先走」。粗箭头优先，细箭头让。"
+      "why": "社区口诀「谁胖谁先走」。粗箭头优先，细箭头让。",
+      "image": "/images/k1/meet.svg"
     },
     {
       "id": "curve",
       "q": "弯道警告：一个弯是急弯，两个反向弯是反向弯，三个以上是连续弯。",
       "type": "tf",
       "answer": true,
-      "why": "口诀「一急、二反、三连续」。看标志里弯了几下。"
+      "why": "口诀「一急、二反、三连续」。看标志里弯了几下。",
+      "image": "/images/k1/curve-2.svg"
     },
     {
       "id": "nogo",
       "q": "红圈白底、中间没有杠，表示禁止驶入。",
       "type": "tf",
       "answer": false,
-      "why": "中间没有杠是禁止通行。中间一道白杠才是禁止驶入。"
+      "why": "中间没有杠是禁止通行。中间一道白杠才是禁止驶入。",
+      "image": "/images/k1/no-pass.svg"
     },
     {
       "id": "nopark-x",
       "q": "蓝底红圈一个叉，表示停车都不行。",
       "type": "tf",
       "answer": true,
-      "why": "一道斜杠是禁止长停，临停可以；一个叉是停都不行。"
+      "why": "一道斜杠是禁止长停，临停可以；一个叉是停都不行。",
+      "image": "/images/k1/no-park.svg"
     },
     {
       "id": "child",
       "q": "黄底三角里两个背书包的小孩，是学校标志。",
       "type": "tf",
       "answer": false,
-      "why": "黄底是注意儿童。学校、人行横道这类指示多半是蓝底。"
+      "why": "黄底是注意儿童。学校、人行横道这类指示多半是蓝底。",
+      "image": "/images/k1/warn-child.svg"
     },
     {
       "id": "bike-y",
       "q": "黄底三角里一辆自行车，是非机动车道。",
       "type": "tf",
       "answer": false,
-      "why": "黄底是注意非机动车。蓝底加车道线才是非机动车道。"
+      "why": "黄底是注意非机动车。蓝底加车道线才是非机动车道。",
+      "image": "/images/k1/warn-bike.svg"
     },
     {
       "id": "hump",
       "q": "黄底一个拱形，是驼峰桥；两个鼓包是路面不平。",
       "type": "tf",
       "answer": true,
-      "why": "一个拱是桥，两个包是路面。不要和「车跳」那类措辞绑死一个图。"
+      "why": "一个拱是桥，两个包是路面。不要和「车跳」那类措辞绑死一个图。",
+      "image": "/images/k1/hump.svg"
     },
     {
       "id": "work",
       "q": "黄底一个人铲土，是施工路段，不是滑坡。",
       "type": "tf",
       "answer": true,
-      "why": "铲土是施工。车绕过菱形障碍是绕行，也不是施工。"
+      "why": "铲土是施工。车绕过菱形障碍是绕行，也不是施工。",
+      "image": "/images/k1/work.svg"
     },
     {
       "id": "tide",
@@ -98,6 +108,37 @@
       "type": "tf",
       "answer": true,
       "why": "路缘黄虚：禁长停。黄实：停都不行。和蓝底禁停牌一套意思。"
+    },
+    {
+      "id": "rocks",
+      "q": "黄底山上掉石头，是傍山险路。",
+      "type": "tf",
+      "answer": false,
+      "why": "掉石头是注意落石。半山一条路才是傍山险路。",
+      "image": "/images/k1/rocks.svg"
+    },
+    {
+      "id": "ferry",
+      "q": "黄底车上有船，是渡口，不是码头。",
+      "type": "tf",
+      "answer": true,
+      "why": "船上有车是渡口。不要选码头。",
+      "image": "/images/k1/ferry.svg"
+    },
+    {
+      "id": "embank",
+      "q": "黄底车掉进水里，是沿河路。",
+      "type": "tf",
+      "answer": false,
+      "why": "车掉进水是堤坝路。",
+      "image": "/images/k1/embankment.svg"
+    },
+    {
+      "id": "white-dash",
+      "q": "白色虚线可以在确认安全后变道。",
+      "type": "tf",
+      "answer": true,
+      "why": "白虚可变，白实不能跨。"
     }
   ]
 }

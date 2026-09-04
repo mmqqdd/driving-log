@@ -14,7 +14,7 @@
 2. 收集资料（最难） →  kb/sources-official.md
                      kb/sources-community.md
 3. 用户丢来的原包   →  kb/raw/（不上 git、不上网站）
-4. 读完蒸馏        →  kb/extracts/
+4. 读完蒸馏        →  kb/extracts/（电子技巧已整本 OCR，见 kemu1-tips.json，不要再识别）
 5. 拆成原子        →  kb/atoms/<科>.json
 6. 精选题库（可选） →  kb/raw/bank/ + kb/questions/
 7. 写成课          →  subjects/k1/（一节一页）

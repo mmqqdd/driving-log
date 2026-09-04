@@ -4,85 +4,76 @@ title: 5. 交通标志与标线
 
 # 5. 交通标志与标线
 
-图最多的一节。先记颜色，再记几组爱混的。
+黄三角 = 警告。红圈 = 禁止。蓝 = 指示 / 指路。黑杠 = 解除。限速：**红高、蓝低、黑解除**。
 
-**颜色**：黄三角 = 注意 / 警告。红圈 = 禁止。蓝 = 指示、指路。黑杠 = 解除。限速：**红高、蓝低、黑解除**。
+**8 停 3 减**：八边形必须停。倒三角减速让，不是停死。路面画倒三角或「停」字，意思一样。
 
-**8 停 3 减**：八边形「停」= 必须停车让行。倒三角「让」= 减速让行，不是停死。路面画倒三角、写「停」字，意思一样。
+<div class="k1-grid">
+<figure><img src="/images/k1/stop.svg" alt="停车让行" /><figcaption>停车让行</figcaption></figure>
+<figure><img src="/images/k1/yield.svg" alt="减速让行" /><figcaption>减速让行</figcaption></figure>
+<figure><img src="/images/k1/meet.svg" alt="会车让行" /><figcaption>粗箭头先走</figcaption></figure>
+<figure><img src="/images/k1/curve-1.svg" alt="急弯" /><figcaption>一急</figcaption></figure>
+<figure><img src="/images/k1/curve-2.svg" alt="反向弯" /><figcaption>二反</figcaption></figure>
+<figure><img src="/images/k1/curve-3.svg" alt="连续弯" /><figcaption>三连续</figcaption></figure>
+</div>
 
-<p class="k1-pics">
-<img src="/images/k1/stop.svg" alt="停车让行" width="112" />
-<img src="/images/k1/yield.svg" alt="减速让行" width="112" />
+**禁令**：没杠 = 禁止通行。一道白杠 = 禁止驶入。蓝底一斜杠 = 禁长停。蓝底叉 = 停都不行。
+
+<div class="k1-grid">
+<figure><img src="/images/k1/no-pass.svg" alt="禁止通行" /><figcaption>禁止通行</figcaption></figure>
+<figure><img src="/images/k1/no-entry.svg" alt="禁止驶入" /><figcaption>禁止驶入</figcaption></figure>
+<figure><img src="/images/k1/no-long-park.svg" alt="禁止长停" /><figcaption>禁长停</figcaption></figure>
+<figure><img src="/images/k1/no-park.svg" alt="禁止停车" /><figcaption>禁止停车</figcaption></figure>
+</div>
+
+**警告爱混**：黄底人 ≠ 人行横道（蓝斑马线）。黄底小孩 ≠ 学校。黄底自行车 ≠ 非机动车道。一个拱是驼峰桥，两个包是路面不平。铲土是施工。火车头是铁路，三道红杠大约 150 米。
+
+<div class="k1-grid">
+<figure><img src="/images/k1/warn-ped.svg" alt="注意行人" /><figcaption>注意行人</figcaption></figure>
+<figure><img src="/images/k1/crosswalk.svg" alt="人行横道" /><figcaption>人行横道</figcaption></figure>
+<figure><img src="/images/k1/warn-child.svg" alt="注意儿童" /><figcaption>注意儿童</figcaption></figure>
+<figure><img src="/images/k1/warn-bike.svg" alt="注意非机动车" /><figcaption>注意非机动车</figcaption></figure>
+<figure><img src="/images/k1/lane-bike.svg" alt="非机动车道" /><figcaption>非机动车道</figcaption></figure>
+<figure><img src="/images/k1/hump.svg" alt="驼峰桥" /><figcaption>驼峰桥</figcaption></figure>
+<figure><img src="/images/k1/uneven.svg" alt="路面不平" /><figcaption>路面不平</figcaption></figure>
+<figure><img src="/images/k1/work.svg" alt="施工" /><figcaption>施工</figcaption></figure>
+<figure><img src="/images/k1/rail.svg" alt="铁路道口" /><figcaption>铁路道口</figcaption></figure>
+<figure><img src="/images/k1/mountain-road.svg" alt="傍山险路" /><figcaption>傍山险路</figcaption></figure>
+<figure><img src="/images/k1/rocks.svg" alt="注意落石" /><figcaption>注意落石</figcaption></figure>
+<figure><img src="/images/k1/embankment.svg" alt="堤坝路" /><figcaption>堤坝路</figcaption></figure>
+<figure><img src="/images/k1/ferry.svg" alt="渡口" /><figcaption>渡口</figcaption></figure>
+</div>
+
+**标线**：白虚可变道，白实不能跨。路缘黄虚禁长停，黄实停都不行。中间两条黄虚是潮汐车道。入口标线「左进右出」。
+
+新标：车道减少、线形诱导改成黄底警告。牌子背面不做广告。
+
+## 各种标志汇总
+
+名字写在每张标底下。
+
+**警告**
+
+<p class="k1-pics k1-sheets">
+<img src="/images/k1/signs-warn-1.jpg" alt="警告标志一" />
+<img src="/images/k1/signs-warn-2.jpg" alt="警告标志二" />
+<img src="/images/k1/signs-warn-3.jpg" alt="警告标志三" />
+<img src="/images/k1/signs-warn-4.jpg" alt="警告标志四" />
 </p>
 
-**弯道**：一个弯是急弯，两个是反向弯，三个是连续弯。口诀「一急、二反、三连续」。
+**禁令**
 
-<p class="k1-pics">
-<img src="/images/k1/curve-1.svg" alt="急弯" width="104" />
-<img src="/images/k1/curve-2.svg" alt="反向弯" width="104" />
-<img src="/images/k1/curve-3.svg" alt="连续弯" width="104" />
+<p class="k1-pics k1-sheets">
+<img src="/images/k1/signs-ban-1.jpg" alt="禁令标志一" />
+<img src="/images/k1/signs-ban-2.jpg" alt="禁令标志二" />
+<img src="/images/k1/signs-ban-3.jpg" alt="禁令标志三" />
 </p>
 
-**会车箭头**：谁胖谁先走。粗箭头优先，细的让。
+**指示**：圆的是「只准怎样走」，方的常是单行或车道。
 
-<p class="k1-pics">
-<img src="/images/k1/meet.svg" alt="会车让行，粗箭头先走" width="112" />
+<p class="k1-pics k1-sheets">
+<img src="/images/k1/signs-guide.jpg" alt="指示标志" />
 </p>
-
-**禁令爱混**
-
-- 红圈白底、中间没有杠：禁止通行，人车都不让过
-- 红圈中间一道白杠：禁止驶入，像栏杆挡车
-- 蓝底红圈一道斜杠：禁止长时间停放，临停可以
-- 蓝底红圈一个叉：停车都不行
-
-<p class="k1-pics">
-<img src="/images/k1/no-pass.svg" alt="禁止通行" width="96" />
-<img src="/images/k1/no-entry.svg" alt="禁止驶入" width="96" />
-<img src="/images/k1/no-long-park.svg" alt="禁止长时间停放" width="96" />
-<img src="/images/k1/no-park.svg" alt="禁止停车" width="96" />
-</p>
-
-**警告爱混**
-
-- 黄底一个人过马路：注意行人。蓝底斑马线才是人行横道
-- 黄底两个背书包的：注意儿童，不是「学校」
-- 黄底一辆自行车：注意非机动车。蓝底自行车加车道线才是非机动车道
-
-<p class="k1-pics">
-<img src="/images/k1/warn-ped.svg" alt="注意行人" width="96" />
-<img src="/images/k1/crosswalk.svg" alt="人行横道" width="96" />
-<img src="/images/k1/warn-child.svg" alt="注意儿童" width="96" />
-<img src="/images/k1/warn-bike.svg" alt="注意非机动车" width="96" />
-<img src="/images/k1/lane-bike.svg" alt="非机动车道" width="96" />
-</p>
-
-- 黄底一个拱：驼峰桥。两个鼓包：路面不平
-- 黄底人铲土：施工。车绕过菱形：前方有障碍绕行，不是施工
-- 火车头：铁路道口。底下三道红杠，大约距无人看守道口 150 米
-
-<p class="k1-pics">
-<img src="/images/k1/hump.svg" alt="驼峰桥" width="96" />
-<img src="/images/k1/uneven.svg" alt="路面不平" width="96" />
-<img src="/images/k1/work.svg" alt="施工" width="96" />
-<img src="/images/k1/rail.svg" alt="铁路道口" width="96" />
-</p>
-
-- 半山一条路：傍山险路。山上掉石头：注意落石。车掉进水里：堤坝路，不是沿河路
-- 车上有船：渡口，不是码头
-
-<p class="k1-pics">
-<img src="/images/k1/mountain-road.svg" alt="傍山险路" width="96" />
-<img src="/images/k1/rocks.svg" alt="注意落石" width="96" />
-<img src="/images/k1/embankment.svg" alt="堤坝路" width="96" />
-<img src="/images/k1/ferry.svg" alt="渡口" width="96" />
-</p>
-
-**标线**：白虚线，确认安全后可以变道。白实线，不能跨。路缘黄虚：禁止长停；黄实：停都不行。中间两条黄虚：潮汐车道。道路入口标线「左进右出」：虚线在三角地带左边是入口，右边是出口。
-
-新标：注意车道减少、线形诱导，从蓝底指路改成黄底警告。牌子背面不做广告。
-
-细标去 12123 里刷。这里只把爱选错的分开。
 
 <Quiz src="/practice/k1/05.json" />
 
