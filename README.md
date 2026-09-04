@@ -3,48 +3,67 @@
 网页：https://driving-log-d25.pages.dev  
 源码：[Gitee](https://gitee.com/mengqiangding/driving-log) · [GitHub](https://github.com/mmqqdd/driving-log)
 
-网站两栏：**教学**、**日常**。科目一按「一章一课 + 一包题」长。科二科三以后套同一套架子。
+顶栏：**首页**、**教学**、**日常**。
+
+教学分三块，不挤在一列：
+
+- **课程** —— 科目一到四。先看后练，每节底下跟测。现在摊开科目一，科二三四占位
+- **练习** —— 随机一题一对错。进去再选练哪一科、哪一块
+- **考试** —— 按考场规矩整卷。进去再选考哪一科
+
+日常记从报名到拿证的完整过程。日历是入口，不是重点。
+
+教学正文不写驾校品牌。哪家驾校、哪个考场，写在日常和档案里。
 
 ---
 
 ## 架构
 
-### 打开网站时
-
 ```
 首页
   教学 → 课程 / 练习 / 考试
-  日常 → 日历（格子上两个字就是那天在干什么）
+  日常 → 完整过程
 
 顶栏
-  教学    日常
+  首页    教学    日常
 ```
 
-日常用日历看，不按「故事 / 流程」再拆。流程页留一句链接。科二三四在课程里占位，不摊开项目。
-
-### 训练模块
+### 课程怎么长
 
 一节 = 一件容易混的事。看完立刻练。文件一对一，加节不改框架。
 
 ```
-subjects/k1/           课（给人看）
-  index.md             目录：现在练到哪、下一节是哪
-  01-xxx.md            正文不超过两屏
-  02-xxx.md
+subjects/k1/           课
+  index.md             九章目录
+  01-xxx.md            正文不超过两屏，底下跟测
   …
 
-public/practice/k1/    题（给 Quiz 抽）
+public/practice/k1/    随堂题
   01.json              只服务 01 那一节
-  02.json
   …
 
 .vitepress/theme/Quiz.vue
-  随机抽 N 道 · 错了出 why · 「再抽一组」
+  随机抽 10 道 · 错了出 why · 「再抽一组」
 ```
 
-一节课底部只写一行：`<Quiz src="/practice/k1/01.json" />`。题变多，页面不用动。
+科二以后原样复制：`subjects/k2/` + `public/practice/k2/`。现在科二三四还是占位页 `subjects/kemu2.md`–`kemu4.md`。
 
-科二以后原样复制：`subjects/k2/` + `public/practice/k2/`。
+### 练习和考试
+
+| 页 | 干什么 |
+|---|---|
+| `subjects/practice.md` | 练习。先选科、再选块 |
+| `exam.md` | 考试。科目一从精选 500 抽 100 题，45 分钟，90 过 |
+
+模拟考题包在 `public/practice/exam/`，从 `kb/raw/bank/` 现抽，不上 git。
+
+### 日常
+
+```
+journal/index.md       日历入口
+journal/YYYY-MM-DD.md  当天经过。frontmatter 的 doing 两个字会出现在日历上
+journal/process.md     从报名到拿证整条线
+```
 
 ### 知识库怎么给训练供货（不上导航）
 
@@ -87,15 +106,6 @@ public/practice/k1/    题（给 Quiz 抽）
 考试须知 → 违法记分 → 超速超员与超重 → 限速与停车 → 交通标志与标线 → 灯光手势与仪表 → 通行与让行 → 准驾与证件 → 酒驾逃逸与急救。
 
 电子技巧 80 条对照账：`kb/extracts/kemu1-80.md`。蒙题不进课。
-
-### 旧入口
-
-| 现在 | 处理 |
-|---|---|
-| `subjects/k1/01`–`06` | 留下，当训练模块第一版 |
-| `kemu1-guide.md`、`practice.md`、`subjects/index.md` | 重定向到 `k1/`，不再当入口 |
-| `kb/` | 继续给写课用，不上顶栏 |
-| `kemu2.md` / `kemu3.md` / `kemu4.md` | 留文件，导航里先藏 |
 
 ---
 
