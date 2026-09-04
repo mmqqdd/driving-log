@@ -75,6 +75,8 @@ title: 5. 交通标志与标线
 <img src="/images/k1/signs-guide.jpg" alt="指示标志" />
 </p>
 
+<ClientOnly>
 <Quiz src="/practice/k1/05.json" />
+</ClientOnly>
 
 上一节：[限速与停车](/subjects/k1/04-xiansu) · 下一节：[灯光、手势与仪表](/subjects/k1/06-deng)

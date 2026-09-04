@@ -48,18 +48,39 @@ function group(
   return items.length ? [{ text, items }] : []
 }
 
+function teachingSidebar(opts: { k1Lessons?: boolean } = {}): DefaultTheme.SidebarItem[] {
+  const k1: DefaultTheme.SidebarItem = opts.k1Lessons
+    ? {
+        text: '科目一',
+        collapsed: false,
+        items: [{ text: '概览', link: '/subjects/k1/' }, ...autoItems('subjects/k1')],
+      }
+    : { text: '科目一', link: '/subjects/k1/' }
+
+  return [
+    {
+      text: '课程',
+      items: [
+        k1,
+        { text: '科目二', link: '/subjects/kemu2' },
+        { text: '科目三', link: '/subjects/kemu3' },
+        { text: '科目四', link: '/subjects/kemu4' },
+      ],
+    },
+    { text: '练习', link: '/subjects/practice' },
+    { text: '考试', link: '/exam' },
+  ]
+}
+
 export default defineConfig({
   lang: 'zh-CN',
-  title: '我在北京考驾照',
-  description: '一个完全没考过的人，从选驾校开始记下的考试记录和攻略',
+  title: '北京 C2 速通指南',
+  description: '北京 C2。课程、练习、考试分开。',
 
   srcExclude: [
     'README.md',
     'AGENTS.md',
     'kb/**',
-    'subjects/kemu2.md',
-    'subjects/kemu3.md',
-    'subjects/kemu4.md',
     'node_modules/**',
     '**/_template.md',
   ],
@@ -69,22 +90,15 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '科目一', link: '/subjects/k1/' },
-      { text: '模拟考试', link: '/exam' },
-      { text: '考试记录', link: '/journal/' },
+      { text: '首页', link: '/' },
+      { text: '教学', link: '/subjects/' },
+      { text: '日常', link: '/journal/' },
     ],
 
     sidebar: {
-      '/subjects/': [
-        {
-          text: '科目一',
-          items: [
-            { text: '目录', link: '/subjects/k1/' },
-            { text: '模拟考试', link: '/exam' },
-          ],
-        },
-        ...group('课程', 'subjects/k1'),
-      ],
+      '/subjects/k1/': teachingSidebar({ k1Lessons: true }),
+      '/subjects/': teachingSidebar(),
+      '/exam': teachingSidebar(),
       '/system/': [
         {
           text: '考试攻略',
@@ -94,7 +108,7 @@ export default defineConfig({
         },
       ],
       '/journal/': [
-        { text: '考试记录', items: [{ text: '故事', link: '/journal/' }, { text: '从报名到拿证', link: '/journal/process' }] },
+        { text: '日常', items: [{ text: '日历', link: '/journal/' }, { text: '从报名到拿证', link: '/journal/process' }] },
         ...group('按日期', 'journal', { desc: true, onlyDates: true }),
       ],
     },
@@ -120,7 +134,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '我在北京考驾照 · 科目一',
+      message: '北京 C2 速通指南',
       copyright: '© 2026 孟强定',
     },
   },

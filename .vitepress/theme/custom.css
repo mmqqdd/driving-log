@@ -1,3 +1,11 @@
+/* 首页是封面，不要文档页那条窄栏和底下翻页 */
+.VPDoc:has(.home) .content-container {
+  max-width: 56rem;
+}
+.VPDoc:has(.home) .vp-doc {
+  padding-top: 0.6rem;
+}
+
 .k1-pics {
   display: flex;
   flex-wrap: wrap;

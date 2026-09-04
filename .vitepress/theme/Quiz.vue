@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref, watch } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 
 const props = defineProps({
   src: { type: String, required: true },
@@ -53,7 +53,7 @@ async function load() {
   }
 }
 
-load()
+onMounted(load)
 watch(() => props.src, load)
 
 function choose(val) {

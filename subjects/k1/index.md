@@ -18,6 +18,6 @@ title: 科目一
 8. [准驾与证件](/subjects/k1/08-zhengjian) —— C2、学法减分、随车证件、ABS
 9. [酒驾、逃逸与急救](/subjects/k1/09-jijiu) —— 酒精阈值、逃逸、现场救护
 
-学完做 [模拟考试](/exam)。整卷仍以东方时尚 App、交管 12123 为准。
+每章底下有跟测。要刷整库，去 [练习](/subjects/practice)。要对时间，去 [考试](/exam)。
 
 错过的原题记在 [科目一笔记](/subjects/kemu1)。

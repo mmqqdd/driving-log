@@ -22,6 +22,8 @@ title: 8. 准驾与证件
 
 长下坡把挡挂低，用发动机拖住车，不要一直踩刹车把碟片踩热。
 
+<ClientOnly>
 <Quiz src="/practice/k1/08.json" />
+</ClientOnly>
 
 上一节：[通行与让行](/subjects/k1/07-rangxing) · 下一节：[酒驾、逃逸与急救](/subjects/k1/09-jijiu)

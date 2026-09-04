@@ -1,6 +1,7 @@
 ---
 title: 科目四 · 安全文明
 subject: kemu4
+search: false
 ---
 
 # 科目四 · 安全文明

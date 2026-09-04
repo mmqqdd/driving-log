@@ -36,6 +36,8 @@ title: 7. 通行与让行
 <figure><img src="/images/k1/work.svg" alt="施工" /><figcaption>施工先慢</figcaption></figure>
 </div>
 
+<ClientOnly>
 <Quiz src="/practice/k1/07.json" />
+</ClientOnly>
 
 上一节：[灯光、手势与仪表](/subjects/k1/06-deng) · 下一节：[准驾与证件](/subjects/k1/08-zhengjian)

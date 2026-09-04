@@ -1,6 +1,7 @@
 ---
 title: 科目二 · 场地
 subject: kemu2
+search: false
 ---
 
 # 科目二 · 场地

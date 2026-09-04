@@ -56,6 +56,8 @@ title: 6. 灯光、手势与仪表
 
 **英文**：制动 EBA / EBD / AEB。前碰 FCW。车道偏离 LDW。巡航 ACC / CCS。盲点 BSD。车身稳定 ESP。牵引力选最长那个缩写。
 
+<ClientOnly>
 <Quiz src="/practice/k1/06.json" />
+</ClientOnly>
 
 上一节：[交通标志与标线](/subjects/k1/05-biaozhi) · 下一节：[通行与让行](/subjects/k1/07-rangxing)

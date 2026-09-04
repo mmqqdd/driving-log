@@ -1,6 +1,6 @@
 # driving-log 仓库说明
 
-网站给别人看。现在突出 **科目一**（`subjects/k1/`）和 **模拟考试**（`exam.md`）。科二科三先不要摊在首页。
+网站给别人看。顶栏是 **教学** 和 **日常**。教学分三块：**课程**（科一到四）、**练习**、**考试**。现在只展开科目一的课，科二三四占位。教学正文不写驾校品牌；日常和档案可以写。科二科三不要摊在首页。
 
 不要写工具怎么用，不要提 Cursor，不要写「本知识库给 AI 用」。`kb/` 不上网站，避免和课程抢视线。
 
@@ -8,13 +8,15 @@
 
 | 路径 | 内容 | 谁维护 |
 |---|---|---|
-| `index.md` | 首页：科目一、模拟考试、考试记录 | 少改 |
+| `index.md` | 首页：教学、日常 | 少改 |
 | `exam.md` | 科目一模拟考，100 题从精选 500 抽 | AI |
-| `journal/` | 考试记录。`process.md` 是从报名到拿证；日期文件是故事 | AI |
+| `journal/` | 日常。日历读 `doing`；`process.md` 是从报名到拿证；日期文件是故事 | AI |
 | `subjects/k1/` | 科目一课程。一章一页，底下跟测 | AI 写，用户补细节 |
 | `subjects/kemu1.md` | 科目一错题 / 易混，不进 JSON | AI 写，用户补 |
-| `subjects/kemu1-guide.md`、`practice.md`、`subjects/index.md` | 短页，指向 `k1/` | 少改 |
-| `subjects/kemu2.md`–`kemu4.md` | 留文件，不上导航、不进搜索 | AI |
+| `subjects/index.md` | 教学目录：课程 / 练习 / 考试 | 少改 |
+| `subjects/practice.md` | 练习：随机一题一对错 | AI |
+| `subjects/kemu1-guide.md` | 短页，指向 `k1/` | 少改 |
+| `subjects/kemu2.md`–`kemu4.md` | 科二三四占位页，进教学目录，不进搜索 | AI |
 | `kb/` | 资料、原子、蒸馏。不上网站 | AI 写 |
 | `kb/atoms/` | 结构化记忆。科一在 `k1.json` | AI |
 | `kb/questions/` | 500 题怎么分类。原题和配图在 `kb/raw/bank/` | AI |
@@ -40,7 +42,7 @@
 2. **写具体，写为什么。** 不要写「注意观察」；要写「右后视镜里库角刚露出来就回正，晚半秒会扫库」。
 3. **数字和口诀以教练 / 用户当场说的为准。** 场地尺寸、打方向圈数因驾校而异，不要用网上的通用口诀覆盖用户自己的手感。
 4. **新增文件不需要改 `.vitepress/config.mts`。** 侧边栏按文件系统自动生成。
-5. **frontmatter 字段不能省。** `profile` 和日志里的 `subject` / `items` 是进度来源。
+5. **frontmatter 字段不能省。** `profile` 和日志里的 `subject` / `items` / `doing` 是进度和日历来源。日记的 `doing` 写两个字（报名、听课、刷题、练车、约考、上场），日历会自己出现，不用改 `journal/index.md`。
 
 ## 写作风格
 

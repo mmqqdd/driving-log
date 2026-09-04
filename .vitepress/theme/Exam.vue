@@ -1,12 +1,19 @@
 <script setup>
-import { computed, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 
 const SRC = '/practice/exam/k1/bank.json'
+const SUBJECTS = [
+  { id: 'k1', label: '科目一', hint: '100 题，45 分钟，90 过', open: true },
+  { id: 'k2', label: '科目二', hint: '场地，不是机考', open: false },
+  { id: 'k3', label: '科目三', hint: '路考，不是机考', open: false },
+  { id: 'k4', label: '科目四', hint: '路考过了再开', open: false },
+]
 const TOTAL = 100
 const MINUTES = 45
 const PASS = 90
 const QUOTA = { license: 20, traffic: 35, penalty: 25, accident: 10, vehicle: 10 }
 
+const subject = ref('k1')
 const pack = ref(null)
 const error = ref('')
 const phase = ref('start')
@@ -158,8 +165,8 @@ function again() {
   phase.value = 'start'
 }
 
+onMounted(load)
 onUnmounted(stopTimer)
-load()
 </script>
 
 <template>
@@ -167,10 +174,23 @@ load()
   <div class="exam" v-else-if="!pack">加载题库…</div>
 
   <div class="exam" v-else-if="phase === 'start'">
-    <p class="lead">100 题，45 分钟，90 过。从精选 500 里抽，判断大约 40，单选大约 60。带图的题图在题目下面。</p>
-    <p class="note">没有北京地方题，那一成用通行规定补上。选项没读全的题不进卷。整本 100 题仍以东方时尚 / 12123 为准。</p>
-    <p class="meta">题库 {{ pack.pool }} 道可抽。</p>
-    <button type="button" class="btn primary" @click="start">开始考试</button>
+    <p class="pick-label">考哪一科</p>
+    <div class="chips">
+      <button
+        v-for="s in SUBJECTS"
+        :key="s.id"
+        type="button"
+        class="chip"
+        :class="{ on: subject === s.id, wait: !s.open }"
+        @click="subject = s.id"
+      >{{ s.label }}</button>
+    </div>
+    <p class="lead">{{ SUBJECTS.find((s) => s.id === subject)?.hint }}</p>
+    <template v-if="subject === 'k1'">
+      <p class="note">从精选 500 里抽，判断大约 40，单选大约 60。带图的题图在题目下面。没有北京地方题，那一成用通行规定补上。整本仍以驾校题库 / 12123 为准。</p>
+      <p class="meta">题库 {{ pack.pool }} 道可抽。</p>
+      <button type="button" class="btn primary" @click="start">开始考试</button>
+    </template>
   </div>
 
   <div class="exam" v-else-if="phase === 'exam' && item">
@@ -231,6 +251,33 @@ load()
 <style scoped>
 .exam {
   margin: 1.2rem 0 2rem;
+}
+.pick-label {
+  margin: 0 0 0.35rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.82rem;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+.chip {
+  padding: 0.22rem 0.65rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  background: var(--vp-c-bg);
+  color: inherit;
+  font-size: 0.84rem;
+  cursor: pointer;
+}
+.chip.on {
+  border-color: var(--vp-c-brand-1);
+  background: color-mix(in srgb, var(--vp-c-brand-1) 14%, var(--vp-c-bg));
+}
+.chip.wait {
+  color: var(--vp-c-text-3);
 }
 .lead, .q {
   line-height: 1.65;

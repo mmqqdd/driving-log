@@ -1,6 +1,7 @@
 ---
 title: 科目三 · 路考
 subject: kemu3
+search: false
 ---
 
 # 科目三 · 路考

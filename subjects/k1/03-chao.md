@@ -35,6 +35,8 @@ title: 3. 超速、超员与超重
 
 **疲劳**：连续开 4 小时，至少歇 20 分钟。中型以上客车疲劳，社区表记 9；货车记 3。以现行记分办法为准。
 
+<ClientOnly>
 <Quiz src="/practice/k1/03.json" />
+</ClientOnly>
 
 上一节：[违法记分](/subjects/k1/02-jifen) · 下一节：[限速与停车](/subjects/k1/04-xiansu)

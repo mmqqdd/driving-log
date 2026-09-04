@@ -28,6 +28,8 @@ title: 2. 违法记分
 
 买卖分给个人：记 12 分，还要罚款。组织卖分罚得更重。数字以现行记分办法为准。
 
+<ClientOnly>
 <Quiz src="/practice/k1/02.json" />
+</ClientOnly>
 
 上一节：[考试须知](/subjects/k1/01-shangchang) · 下一节：[超速、超员与超重](/subjects/k1/03-chao)

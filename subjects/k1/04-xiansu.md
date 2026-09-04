@@ -49,6 +49,8 @@ title: 4. 限速与停车
 <img src="/images/k1/warn-triangle.svg" alt="故障车警告标志" width="96" />
 </p>
 
+<ClientOnly>
 <Quiz src="/practice/k1/04.json" />
+</ClientOnly>
 
 上一节：[超速、超员与超重](/subjects/k1/03-chao) · 下一节：[交通标志与标线](/subjects/k1/05-biaozhi)

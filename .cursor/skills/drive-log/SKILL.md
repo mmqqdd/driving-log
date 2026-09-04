@@ -16,7 +16,7 @@ description: 为 driving-log 记录练车、刷题、教练口诀和约考进度
 - [ ] 2. 写或追加 journal/YYYY-MM-DD.md（练车 / 刷题时）
 - [ ] 3. 回写对应科目：科一进 subjects/k1/ 那一节（必要时兼写 kemu1.md）；科二三四仍写 subjects/kemuN.md
 - [ ] 4. 需要时更新 profile
-- [ ] 5. 更新 journal/index.md（第一次写日志时）
+- [ ] 5. 日记加 `doing`（日历上那两个字）。日历会自己出现，不用改 journal/index.md
 ```
 
 ### 1. 分类
@@ -76,6 +76,7 @@ title: 9 月 3 日 · 倒车入库扫库了
 date: 2026-09-03
 kind: practice
 subject: kemu2
+doing: 练车
 items: [倒车入库]
 ---
 
@@ -125,15 +126,11 @@ items: [倒车入库]
 
 正文进度清单的勾选和 `passed` 保持一致。
 
-### 5. 更新考试记录索引
+### 5. 日历上的两个字
 
-`journal/index.md` 的「故事」列表顶部加一行，口吻跟正文一样：
+日记 frontmatter 写 `doing`：报名、听课、刷题、练车、约考、上场。日常页日历会自己出现这一天，不用改 `journal/index.md`。
 
-```markdown
-- [9 月 3 日 · 倒车入库扫库了](/journal/2026-09-03)
-```
-
-网站分两块：**科目一**（`subjects/k1/`）和 **考试记录**（`journal/`）。新内容对号入座，不要写回首页长文。
+网站分两块：**教学**（课程 / 练习 / 考试；科一在 `k1/`，科二三四在 `kemuN.md`）和 **日常**（`journal/`）。教学正文不写驾校品牌。新内容对号入座，不要写回首页长文。
 
 ## 例子
 
