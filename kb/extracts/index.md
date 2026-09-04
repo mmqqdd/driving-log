@@ -11,6 +11,8 @@ title: 口诀和流程
 | 页 | 能用来干什么 |
 |---|---|
 | [科目一口诀](/kb/extracts/kemu1-koujue) | 记分档、限速、手势、标志 |
+| [80 条对照账](/kb/extracts/kemu1-80) | 电子技巧哪条进课、哪条丢掉 |
+| [课程配图账](/kb/questions/k1-images) | 课里每张图是什么、来自哪 |
 | [理论考场怎么进](/kb/extracts/exam-hall) | 候考厅怎么走。京南东方时尚以现场为准 |
 | [科目二上场和评判](/kb/extracts/kemu2-judging) | 上场顺序、扣分项 |
 | [科目三上场和评判](/kb/extracts/kemu3-judging) | 听到什么做什么 |

@@ -14,7 +14,7 @@ updated: 2026-09-03
 │   ├── 东方时尚 App 录播全部听完（考勤）
 │   └── 档案受理满 2 天
 ├── 会考什么
-│   ├── 六节课（见 subjects/k1/）
+│   ├── 九节课（见 subjects/k1/）
 │   └── 北京地方题约 10%
 ├── 刷到能上考场
 │   ├── 章节刷 + 错题
@@ -40,7 +40,8 @@ updated: 2026-09-03
 
 | 产物 | 路径 |
 |---|---|
-| 按节课 | `subjects/k1/01`–`06` |
+| 按节课 | `subjects/k1/01`–`09` |
+| 80 条对照 | `kb/extracts/kemu1-80.md` |
 | 原子 | `kb/atoms/k1.json` |
 | 错题笔记 | `subjects/kemu1.md` |
 | 练习 | `public/practice/k1/01.json`–`06.json`，嵌在各节课底 |

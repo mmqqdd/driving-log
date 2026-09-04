@@ -1,0 +1,19 @@
+.k1-pics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.1rem;
+  align-items: flex-end;
+  margin: 0.8rem 0 1.2rem;
+}
+
+.k1-pics img {
+  height: auto;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+}
+
+.k1-pics img[src*="police-"] {
+  width: 168px;
+  max-width: 46vw;
+  background: #fff;
+}

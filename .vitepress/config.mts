@@ -69,7 +69,7 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '科目一训练', link: '/subjects/k1/' },
+      { text: '科目一', link: '/subjects/k1/' },
       { text: '模拟考试', link: '/exam' },
       { text: '考试记录', link: '/journal/' },
     ],
@@ -79,11 +79,11 @@ export default defineConfig({
         {
           text: '科目一',
           items: [
-            { text: '六节目录', link: '/subjects/k1/' },
+            { text: '目录', link: '/subjects/k1/' },
             { text: '模拟考试', link: '/exam' },
           ],
         },
-        ...group('按节学', 'subjects/k1'),
+        ...group('课程', 'subjects/k1'),
       ],
       '/system/': [
         {
@@ -120,7 +120,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '我在北京考驾照 · 科目一按节学',
+      message: '我在北京考驾照 · 科目一',
       copyright: '© 2026 孟强定',
     },
   },

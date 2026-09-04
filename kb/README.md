@@ -42,7 +42,7 @@
 
 ## 原子
 
-`kb/atoms/k1.json` 是数组。字段：`id`、`kind`（rule / pit / mnemonic / discard）、`claim`、`why`、`trust`、`source`、`lesson`（01–06 或 null）、`c2`。
+`kb/atoms/k1.json` 是数组。字段：`id`、`kind`（rule / pit / mnemonic / discard）、`claim`、`why`、`trust`、`source`、`lesson`（01–09 或 null）、`c2`。80 条对照见 `extracts/kemu1-80.md`。
 
 蒙题法（看见「应当」就打对等）标 `discard`，不进课、不进练习。`extracts/kemu1-koujue.md` 是同一批原子的可读视图，不要删。
 

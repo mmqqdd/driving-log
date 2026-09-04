@@ -206,7 +206,7 @@
     "why": "口诀「不、号、停；高九停」。",
     "trust": "official",
     "source": "记分办法；kb/extracts/kemu1-koujue.md",
-    "lesson": "02",
+    "lesson": "08",
     "c2": false
   },
   {
@@ -256,7 +256,7 @@
     "why": "记分从 20% 起。校车、中型以上客车、危化品另算。",
     "trust": "official",
     "source": "记分办法",
-    "lesson": "02",
+    "lesson": "03",
     "c2": false
   },
   {
@@ -266,7 +266,7 @@
     "why": "口诀「普 36」。",
     "trust": "official",
     "source": "记分办法",
-    "lesson": "02",
+    "lesson": "03",
     "c2": false
   },
   {
@@ -276,7 +276,7 @@
     "why": "口诀「高 6 满」。",
     "trust": "official",
     "source": "记分办法",
-    "lesson": "02",
+    "lesson": "03",
     "c2": false
   },
   {
@@ -286,7 +286,7 @@
     "why": "用来记两张表，不以口诀代替 12123。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "02",
+    "lesson": "03",
     "c2": false
   },
   {
@@ -296,7 +296,7 @@
     "why": "口诀「普 169，高 6 满」。和普通小车不是一张表。",
     "trust": "official",
     "source": "记分办法；kb/extracts/kemu1-koujue.md",
-    "lesson": "02",
+    "lesson": "03",
     "c2": false
   },
   {
@@ -306,7 +306,7 @@
     "why": "客运超员顶档来得快。其他客车按座位数和超员比例另算。",
     "trust": "official",
     "source": "记分办法；kb/extracts/kemu1-koujue.md",
-    "lesson": "02",
+    "lesson": "03",
     "c2": false
   },
   {
@@ -316,7 +316,7 @@
     "why": "和校车那档不要混。C2 日常开小车，题里仍会考。",
     "trust": "official",
     "source": "记分办法；kb/extracts/kemu1-koujue.md",
-    "lesson": "02",
+    "lesson": "03",
     "c2": false
   },
   {
@@ -326,7 +326,7 @@
     "why": "超重起点比超员低，但顶档是 6 不是 12。",
     "trust": "official",
     "source": "记分办法；kb/extracts/kemu1-koujue.md",
-    "lesson": "02",
+    "lesson": "03",
     "c2": false
   },
   {
@@ -346,7 +346,7 @@
     "why": "社区表。和 12123 对不上听 12123。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "02",
+    "lesson": "03",
     "c2": false
   },
   {
@@ -356,7 +356,7 @@
     "why": "减满就停，不是无限刷。",
     "trust": "official",
     "source": "学法减分规定；kb/extracts/kemu1-koujue.md",
-    "lesson": "02",
+    "lesson": "08",
     "c2": false
   },
   {
@@ -396,7 +396,7 @@
     "why": "准驾车型向下兼容：C1 能开 C2 / C3 / C4，C2 不能往上开。",
     "trust": "official",
     "source": "申领规定",
-    "lesson": "02",
+    "lesson": "08",
     "c2": true
   },
   {
@@ -406,7 +406,7 @@
     "why": "准驾向下兼容。上车只记自己的 C2。",
     "trust": "official",
     "source": "申领规定；kb/extracts/kemu1-koujue.md",
-    "lesson": "02",
+    "lesson": "08",
     "c2": true
   },
   {
@@ -426,7 +426,7 @@
     "why": "实施条例默认最高时速。有牌子听牌子。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -436,7 +436,7 @@
     "why": "城市 30/50，公路 40/70。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -446,7 +446,7 @@
     "why": "应试捷径，不是法规。有牌子仍听牌子，和 12123 对不上听 12123。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -456,7 +456,7 @@
     "why": "实施条例能见度三档第一档。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -466,7 +466,7 @@
     "why": "第二档。不要和 60/100 混。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -476,7 +476,7 @@
     "why": "不是降到 40 接着开。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -486,7 +486,7 @@
     "why": "200→60/100，100→40/50，50→20 离开。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -496,7 +496,7 @@
     "why": "口 5。这组是 50 不是 30。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -506,7 +506,7 @@
     "why": "站 3。不要写成 50。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -516,7 +516,7 @@
     "why": "路口隧道那组 50 米，车站油站那组 30 米。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -526,7 +526,7 @@
     "why": "实施条例。两套距离不要并成一个数。",
     "trust": "official",
     "source": "实施条例第 60、82 条",
-    "lesson": "03",
+    "lesson": "04",
     "c2": false
   },
   {
@@ -536,7 +536,7 @@
     "why": "先认颜色再认图形。",
     "trust": "official",
     "source": "道路交通标志标线国标",
-    "lesson": "04",
+    "lesson": "05",
     "c2": false
   },
   {
@@ -546,7 +546,7 @@
     "why": "口诀 8 停 3 减。形状不同，动作不同。",
     "trust": "official",
     "source": "标志国标",
-    "lesson": "04",
+    "lesson": "05",
     "c2": false
   },
   {
@@ -556,7 +556,7 @@
     "why": "八边形停，倒三角减速让。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -566,7 +566,7 @@
     "why": "一个弯是急弯，两个反向，三个以上连续弯。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "05",
     "c2": false
   },
   {
@@ -576,7 +576,7 @@
     "why": "粗的那边先行，细的让。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "05",
     "c2": false
   },
   {
@@ -586,7 +586,7 @@
     "why": "能对回标准动作。",
     "trust": "official",
     "source": "交通警察手势信号规范；kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -596,7 +596,7 @@
     "why": "不是减速。减速是右手从上往下摆。",
     "trust": "official",
     "source": "手势信号规范",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -606,7 +606,7 @@
     "why": "右掌心向下也是减速。左掌心向下是左转待转。",
     "trust": "official",
     "source": "手势信号规范；kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -616,17 +616,17 @@
     "why": "社区记转向手势。以标准动作为准。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
     "id": "k1-04-hand-curb",
     "kind": "rule",
-    "claim": "右手上举、左手摆：靠边停车。",
-    "why": "和「左手举过头顶停车等待」不是同一手。",
+    "claim": "示意车辆靠边停车：左臂向前上方平伸，右臂向前下方平伸再向左摆。",
+    "why": "两只手都在动。只举左手、右手垂着是停止，不是靠边。社区「右手上举、左手摆」和通告左右反了。",
     "trust": "official",
     "source": "手势信号规范；kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -636,7 +636,7 @@
     "why": "正面看动作时先看掌心和胳膊。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -646,17 +646,17 @@
     "why": "辨认图标，不是蒙题。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
     "id": "k1-04-fog",
     "kind": "mnemonic",
-    "claim": "前雾灯绿、后雾灯黄。",
-    "why": "口诀前绿后黄。后雾灯容易晃后面的人。",
+    "claim": "前雾灯绿、光线向左；后雾灯黄、光线向右。",
+    "why": "口诀前绿后黄、左前右后。后雾灯容易晃后面的人。精选 500 第 125 题题干写后雾灯、图却是前雾灯，选错误。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -666,7 +666,7 @@
     "why": "辨认时别只盯一盏。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -676,7 +676,7 @@
     "why": "两块表别认反。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -686,7 +686,7 @@
     "why": "不是普通提示。亮了先当刹车有问题。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -696,7 +696,7 @@
     "why": "和制动感叹号不是同一个灯。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -706,7 +706,7 @@
     "why": "紧急制动辅助、制动力分配、自动紧急制动。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "06",
     "c2": false
   },
   {
@@ -716,7 +716,7 @@
     "why": "新增英文缩写题。课里先记制动和预警，其余进原子备查。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "04",
+    "lesson": "05",
     "c2": false
   },
   {
@@ -726,7 +726,7 @@
     "why": "远光会晃对面。实施条例。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "05",
+    "lesson": "07",
     "c2": false
   },
   {
@@ -736,7 +736,7 @@
     "why": "实施条例。没过线的应当停在线外。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "05",
+    "lesson": "07",
     "c2": false
   },
   {
@@ -746,7 +746,7 @@
     "why": "没过线停在线外。抢黄灯是错的。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "05",
+    "lesson": "07",
     "c2": false
   },
   {
@@ -756,7 +756,7 @@
     "why": "虚线可跨，实线不可跨。",
     "trust": "official",
     "source": "标志标线国标",
-    "lesson": "05",
+    "lesson": "07",
     "c2": false
   },
   {
@@ -766,7 +766,7 @@
     "why": "打灯不是通行证。",
     "trust": "official",
     "source": "标志标线国标",
-    "lesson": "05",
+    "lesson": "07",
     "c2": false
   },
   {
@@ -776,7 +776,7 @@
     "why": "安全法。人还在线上，车先停。",
     "trust": "official",
     "source": "道路交通安全法",
-    "lesson": "05",
+    "lesson": "07",
     "c2": false
   },
   {
@@ -786,7 +786,7 @@
     "why": "不是「自己觉得不影响就可以转」。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "05",
+    "lesson": "07",
     "c2": false
   },
   {
@@ -796,7 +796,7 @@
     "why": "实施条例。右侧超是违法。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "05",
+    "lesson": "07",
     "c2": false
   },
   {
@@ -806,7 +806,7 @@
     "why": "自己觉得没醉不算数。罚款档以安全法为准。",
     "trust": "official",
     "source": "道路交通安全法",
-    "lesson": "06",
+    "lesson": "09",
     "c2": false
   },
   {
@@ -816,7 +816,7 @@
     "why": "不是扣几分的事。",
     "trust": "official",
     "source": "道路交通安全法",
-    "lesson": "06",
+    "lesson": "09",
     "c2": false
   },
   {
@@ -826,7 +826,7 @@
     "why": "C2 一个人上高速不行。",
     "trust": "official",
     "source": "申领规定",
-    "lesson": "06",
+    "lesson": "08",
     "c2": true
   },
   {
@@ -836,7 +836,7 @@
     "why": "仰卧容易让分泌物进气管。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "06",
+    "lesson": "09",
     "c2": false
   },
   {
@@ -846,7 +846,7 @@
     "why": "不要用软担架拖，也不要用麻绳捆。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "06",
+    "lesson": "09",
     "c2": false
   },
   {
@@ -856,7 +856,7 @@
     "why": "血止不住，后面的搬运都来不及。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "06",
+    "lesson": "09",
     "c2": false
   },
   {
@@ -866,7 +866,7 @@
     "why": "社区急救口诀，能对回常识。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "06",
+    "lesson": "09",
     "c2": false
   },
   {
@@ -876,7 +876,7 @@
     "why": "人不离开毒源，后面的救护没用。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
-    "lesson": "06",
+    "lesson": "09",
     "c2": false
   },
   {
@@ -886,7 +886,7 @@
     "why": "五样少一样都是没带齐。",
     "trust": "official",
     "source": "道路交通安全法；kb/extracts/kemu1-koujue.md",
-    "lesson": "06",
+    "lesson": "08",
     "c2": false
   },
   {
@@ -896,7 +896,7 @@
     "why": "普通路 50–100 米，高速 150 米以外。",
     "trust": "official",
     "source": "实施条例",
-    "lesson": "06",
+    "lesson": "09",
     "c2": false
   },
   {

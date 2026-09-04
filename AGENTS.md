@@ -1,6 +1,6 @@
 # driving-log 仓库说明
 
-网站给别人看。现在突出 **科目一按节学**（`subjects/k1/`）和 **模拟考试**（`exam.md`）。科二科三先不要摊在首页。
+网站给别人看。现在突出 **科目一**（`subjects/k1/`）和 **模拟考试**（`exam.md`）。科二科三先不要摊在首页。
 
 不要写工具怎么用，不要提 Cursor，不要写「本知识库给 AI 用」。`kb/` 不上网站，避免和课程抢视线。
 
@@ -8,10 +8,10 @@
 
 | 路径 | 内容 | 谁维护 |
 |---|---|---|
-| `index.md` | 首页：科目一训练、模拟考试、考试记录 | 少改 |
+| `index.md` | 首页：科目一、模拟考试、考试记录 | 少改 |
 | `exam.md` | 科目一模拟考，100 题从精选 500 抽 | AI |
 | `journal/` | 考试记录。`process.md` 是从报名到拿证；日期文件是故事 | AI |
-| `subjects/k1/` | 科目一按节课。一节一页，底下跟测 | AI 写，用户补细节 |
+| `subjects/k1/` | 科目一课程。一章一页，底下跟测 | AI 写，用户补细节 |
 | `subjects/kemu1.md` | 科目一错题 / 易混，不进 JSON | AI 写，用户补 |
 | `subjects/kemu1-guide.md`、`practice.md`、`subjects/index.md` | 短页，指向 `k1/` | 少改 |
 | `subjects/kemu2.md`–`kemu4.md` | 留文件，不上导航、不进搜索 | AI |
@@ -20,10 +20,11 @@
 | `kb/questions/` | 500 题怎么分类。原题和配图在 `kb/raw/bank/` | AI |
 | `kb/goals/`、`kb/README.md`、`kb/extracts/pack.md` | 拆目标、工作说明。不上网站 | AI |
 | `kb/raw/` | 用户收来的 PDF / 视频原包，gitignore，不上网站 | 用户下，AI 读 |
-| `public/practice/k1/` | 按节题包 `01.json`–`06.json` | AI |
+| `public/practice/k1/` | 按节题包 `01.json`–`09.json` | AI |
 | `public/practice/exam/` | 模拟考题包，从 `kb/raw/bank/` 现抽，gitignore | AI |
 | `system/profile.md` | 驾校、费用、进度。frontmatter 的 `profile` 是硬数据 | 用户说，AI 写 |
 | `public/images/` | 用户发来的图，网页用 `/images/文件名` 引用 | AI 拷进去 |
+| `public/images/k1/` | 科目一课里的标和手势。账本 `kb/questions/k1-images.md` | AI |
 
 ## 常用请求
 

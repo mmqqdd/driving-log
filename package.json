@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vitepress dev",
     "exam:pack": "python3 scripts/publish-k1-exam.py",
+    "course:images": "python3 scripts/publish-k1-course-images.py",
     "build": "python3 scripts/publish-k1-exam.py && vitepress build",
     "preview": "vitepress preview"
   },

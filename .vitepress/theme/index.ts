@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 import Quiz from './Quiz.vue'
 import Exam from './Exam.vue'
+import './custom.css'
 
 export default {
   extends: DefaultTheme,
