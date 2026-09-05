@@ -34,7 +34,7 @@ export default createContentLoader('journal/*.md', {
           date: ymd(p.url, fm.date),
           title: String(fm.title ?? ''),
           doing,
-          when: String(fm.when || '').trim(),
+          when: typeof fm.when === 'string' ? fm.when.trim() : '',
           items,
         }
       })
