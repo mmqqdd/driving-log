@@ -11,6 +11,7 @@ const TONE = {
   练车: 'drive',
   约考: 'book',
   上场: 'exam',
+  考试: 'exam',
 }
 
 const list = computed(() => (Array.isArray(days) ? days : []))
@@ -79,7 +80,10 @@ function next() {
 }
 
 function tone(doing) {
-  return TONE[doing] || 'other'
+  const name = String(doing || '')
+  if (TONE[name]) return TONE[name]
+  if (name.includes('考试')) return 'exam'
+  return 'other'
 }
 </script>
 
@@ -194,7 +198,7 @@ function tone(doing) {
   filter: brightness(0.98);
 }
 .cal-do {
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0.02em;
