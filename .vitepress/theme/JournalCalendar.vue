@@ -45,7 +45,7 @@ const label = computed(() => {
 const story = computed(() => {
   return list.value
     .filter((d) => d.date.startsWith(cursor.value))
-    .map((d) => `${Number(d.date.slice(8))}日${d.doing}`)
+    .map((d) => `${Number(d.date.slice(8))}日${d.doing}${d.when ? ` ${d.when}` : ''}`)
     .join(' · ')
 })
 
@@ -105,6 +105,7 @@ function tone(doing) {
           :href="c.entry.url"
         >
           <span class="cal-do">{{ c.entry.doing }}</span>
+          <span v-if="c.entry.when" class="cal-when">{{ c.entry.when }}</span>
           <span class="cal-n">{{ c.n }}日</span>
         </a>
         <span v-else class="cal-cell" :class="{ today: c.date === today }">
@@ -197,6 +198,12 @@ function tone(doing) {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0.02em;
+}
+.cal-when {
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.2;
+  opacity: 0.88;
 }
 .cal-n {
   font-size: 0.72rem;

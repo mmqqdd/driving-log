@@ -5,6 +5,7 @@ export interface JournalDay {
   date: string
   title: string
   doing: string
+  when: string
   items: string[]
 }
 
@@ -33,6 +34,7 @@ export default createContentLoader('journal/*.md', {
           date: ymd(p.url, fm.date),
           title: String(fm.title ?? ''),
           doing,
+          when: String(fm.when || '').trim(),
           items,
         }
       })
