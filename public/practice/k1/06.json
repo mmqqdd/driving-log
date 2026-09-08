@@ -75,14 +75,14 @@
       "q": "EBA、EBD、AEB 这几个缩写，都跟制动有关。",
       "type": "tf",
       "answer": true,
-      "why": "紧急制动辅助、制动力分配、自动紧急制动。LDW 是车道偏离，ACC / CCS 是巡航，不要塞进制动里。"
+      "why": "EBA Emergency Brake Assist，EBD Electronic Brakeforce Distribution，AEB Autonomous Emergency Braking，都带 Brake。LDW 是 Lane Departure Warning，ACC / CCS 带 Cruise，不要塞进制动里。"
     },
     {
       "id": "ldw",
       "q": "LDW 表示车道偏离预警。",
       "type": "tf",
       "answer": true,
-      "why": "Lane Departure Warning。FCW 是前碰预警，BSD 是盲点，ESP 是车身稳定。"
+      "why": "LDW = Lane Departure Warning。FCW = Forward Collision Warning，BSD = Blind Spot Detection，ESP = Electronic Stability Program。"
     },
     {
       "id": "wait-turn",
@@ -121,7 +121,7 @@
       "q": "只动右手、掌心向下上下摆，是左转弯待转。",
       "type": "tf",
       "answer": false,
-      "why": "只动右手是减速。待转那只左手还搭在杆上。",
+      "why": "掌心向下、上下摆：动右手是减速慢行，动左手才是左转弯待转。图上左手垂着、只甩右臂，是减速。",
       "image": "/images/k1/police-slow.jpg"
     },
     {

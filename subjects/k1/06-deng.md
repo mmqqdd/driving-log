@@ -54,7 +54,22 @@ title: 6. 灯光、手势与仪表
 <figure><img src="/images/k1/park-brake.svg" alt="手刹" /><figcaption>手刹 (P)</figcaption></figure>
 </div>
 
-**英文**：制动 EBA / EBD / AEB。前碰 FCW。车道偏离 LDW。巡航 ACC / CCS。盲点 BSD。车身稳定 ESP。牵引力选最长那个缩写。
+**英文**（字母对单词，题里认意思）：
+
+| 缩写 | 英文 | 题里认 |
+|---|---|---|
+| EBA | Emergency Brake Assist | 紧急制动辅助 |
+| EBD | Electronic Brakeforce Distribution | 电子制动力分配 |
+| AEB | Autonomous Emergency Braking | 自动紧急制动 |
+| FCW | Forward Collision Warning | 前碰预警 |
+| LDW | Lane Departure Warning | 车道偏离预警 |
+| ACC | Adaptive Cruise Control | 自适应巡航 |
+| CCS | Cruise Control System | 巡航控制 |
+| BSD | Blind Spot Detection | 盲点监测 |
+| ESP | Electronic Stability Program | 车身稳定 |
+| TCS | Traction Control System | 牵引力控制；选项里选最长那个 |
+
+EBA / EBD / AEB 三个都带 Brake，都是制动。ACC / CCS 都带 Cruise，都是巡航。LDW 的 Departure 是偏离，不是制动。
 
 <ClientOnly>
 <Quiz src="/practice/k1/06.json" />
