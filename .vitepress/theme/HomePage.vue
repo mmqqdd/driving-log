@@ -3,18 +3,18 @@
     <header class="hero">
       <p class="eyebrow">北京 · 自动挡</p>
       <h1>C2 速通指南</h1>
-      <p class="lead">2026 年 9 月开的头。现在在科目一。</p>
+      <p class="lead">2026 年 9 月开的头。现在在科目二。</p>
       <p class="chips">
         <span>C2</span>
-        <span class="now">科目一</span>
+        <span class="now">科目二</span>
       </p>
     </header>
 
     <div class="grid">
       <section class="panel teach">
         <p class="kicker">教学</p>
-        <h2>课、练、考分开走</h2>
-        <p class="desc">四科都在。先看后练，看完一节就跟几道题。现在学到科目一。</p>
+        <h2>课、练、考，加一份资料</h2>
+        <p class="desc">四科都在。先看后练，看完一节就跟几道题。现在学到科目二。</p>
         <div class="paths">
           <a href="/subjects/k1/">
             <strong>课程</strong>
@@ -27,6 +27,10 @@
           <a href="/exam">
             <strong>考试</strong>
             <span>100 题，45 分钟</span>
+          </a>
+          <a href="/subjects/ziliao">
+            <strong>资料</strong>
+            <span>驾校 PDF 直接翻</span>
           </a>
         </div>
       </section>
