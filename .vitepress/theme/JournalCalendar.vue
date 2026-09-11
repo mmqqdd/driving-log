@@ -12,6 +12,9 @@ const TONE = {
   约考: 'book',
   上场: 'exam',
   考试: 'exam',
+  科目二VR: 'drive',
+  科目二实车: 'drive',
+  约科目二: 'book',
 }
 
 const list = computed(() => (Array.isArray(days) ? days : []))
@@ -28,15 +31,19 @@ const months = computed(() => {
   return [...s].sort()
 })
 
-const cursor = ref(months.value.at(-1) ?? '2026-09')
+function monthKey(d) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`
+}
 
-const today = computed(() => {
-  const now = new Date()
-  const y = now.getFullYear()
-  const m = String(now.getMonth() + 1).padStart(2, '0')
-  const d = String(now.getDate()).padStart(2, '0')
-  return `${y}-${m}-${d}`
-})
+const now = new Date()
+const todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`
+
+// 默认打开这个月；这个月还没记就打开最后一个月有记录的日子
+const cursor = ref(
+  months.value.includes(todayKey.slice(0, 7)) ? todayKey.slice(0, 7) : (months.value.at(-1) ?? todayKey.slice(0, 7)),
+)
+
+const today = computed(() => todayKey)
 
 const label = computed(() => {
   const [y, m] = cursor.value.split('-')
@@ -44,10 +51,10 @@ const label = computed(() => {
 })
 
 const story = computed(() => {
-  return list.value
+  const entries = list.value
     .filter((d) => d.date.startsWith(cursor.value))
     .map((d) => `${Number(d.date.slice(8))}日${d.doing}${d.when ? ` ${d.when}` : ''}`)
-    .join(' · ')
+  return entries.length ? entries.join(' · ') : '这个月还没记。'
 })
 
 const cells = computed(() => {
@@ -66,23 +73,30 @@ const cells = computed(() => {
   return out
 })
 
-const canPrev = computed(() => months.value.indexOf(cursor.value) > 0)
-const canNext = computed(() => months.value.indexOf(cursor.value) < months.value.length - 1 && months.value.length > 0)
+// 按自然月翻页：下个月永远可以点（哪怕还没记），上个月最多翻到第一条记录那个月
+const canPrev = computed(() => {
+  const [y, m] = cursor.value.split('-').map(Number)
+  const key = monthKey(new Date(y, m - 2, 1))
+  return months.value.length > 0 && key >= months.value[0]
+})
+const canNext = computed(() => true)
 
 function prev() {
-  const i = months.value.indexOf(cursor.value)
-  if (i > 0) cursor.value = months.value[i - 1]
+  const [y, m] = cursor.value.split('-').map(Number)
+  cursor.value = monthKey(new Date(y, m - 2, 1))
 }
 
 function next() {
-  const i = months.value.indexOf(cursor.value)
-  if (i >= 0 && i < months.value.length - 1) cursor.value = months.value[i + 1]
+  const [y, m] = cursor.value.split('-').map(Number)
+  cursor.value = monthKey(new Date(y, m, 1))
 }
 
 function tone(doing) {
   const name = String(doing || '')
   if (TONE[name]) return TONE[name]
   if (name.includes('考试')) return 'exam'
+  if (name.includes('VR') || name.includes('实车')) return 'drive'
+  if (name.includes('约')) return 'book'
   return 'other'
 }
 </script>
