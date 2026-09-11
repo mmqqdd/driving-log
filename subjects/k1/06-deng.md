@@ -68,8 +68,9 @@ title: 6. 灯光、手势与仪表
 | BSD | Blind Spot Detection | 盲点监测 |
 | ESP | Electronic Stability Program | 车身稳定 |
 | TCS | Traction Control System | 牵引力控制；选项里选最长那个 |
+| ALC | Automatic Lane Change | 自动变道；LCA 也是变道，题里出现哪个选哪个 |
 
-EBA / EBD / AEB 三个都带 Brake，都是制动。ACC / CCS 都带 Cruise，都是巡航。LDW 的 Departure 是偏离，不是制动。
+EBA / EBD / AEB 三个都带 Brake，都是制动。**自动刹车辅助是 AEB**，不是 EB。**自适应巡航是 ACC**，不是 CC。选项字母 A 常把缩写开头的 A 吃掉。ACC / CCS 都带 Cruise，都是巡航。LDW 的 Departure 是偏离，不是制动。
 
 <ClientOnly>
 <Quiz src="/practice/k1/06.json" />

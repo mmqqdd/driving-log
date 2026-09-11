@@ -125,6 +125,20 @@
       "image": "/images/k1/police-slow.jpg"
     },
     {
+      "id": "aeb-not-eb",
+      "q": "自动刹车辅助系统的缩写是 EB。",
+      "type": "tf",
+      "answer": false,
+      "why": "是 AEB，Autonomous Emergency Braking。选项字母 A 常把缩写开头的 A 吃掉，剩下 EB。紧急制动辅助才是 EBA。"
+    },
+    {
+      "id": "acc-not-cc",
+      "q": "自适应巡航的缩写是 CC。",
+      "type": "tf",
+      "answer": false,
+      "why": "是 ACC，Adaptive Cruise Control。CCS 是巡航控制。只剩 CC 两个字母，是开头的 A 被吃掉了。"
+    },
+    {
       "id": "rpm8",
       "q": "表盘数字只到 8，是车速表。",
       "type": "tf",

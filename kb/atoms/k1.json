@@ -483,9 +483,19 @@
     "id": "k1-03-vis50",
     "kind": "rule",
     "claim": "高速能见度不到 50 米：车速不超过 20，并从最近出口离开。",
-    "why": "不是降到 40 接着开。",
+    "why": "不是降到 40 接着开，也不是先停应急车道等雾散。",
     "trust": "official",
     "source": "实施条例",
+    "lesson": "04",
+    "c2": false
+  },
+  {
+    "id": "k1-04-fog-hard",
+    "kind": "rule",
+    "claim": "浓雾 / 特大雾、能见度过低、行车困难：开双闪和雾灯，停到安全地点。不是靠右接着开。",
+    "why": "普通雾天还能开：雾灯 + 双闪、减速。高速不到 50 米走最近出口，不是停应急车道。",
+    "trust": "official",
+    "source": "实施条例第五十八条、第八十一条；科目一题库",
     "lesson": "04",
     "c2": false
   },
@@ -712,8 +722,8 @@
   {
     "id": "k1-04-abbr-brake",
     "kind": "rule",
-    "claim": "EBA / EBD / AEB 都跟制动有关。",
-    "why": "紧急制动辅助、制动力分配、自动紧急制动。",
+    "claim": "EBA / EBD / AEB 都跟制动有关。自动刹车辅助是 AEB，不是 EB。",
+    "why": "紧急制动辅助、制动力分配、自动紧急制动。选项字母 A 常把 AEB / ACC 开头的 A 吃掉。",
     "trust": "community",
     "source": "kb/extracts/kemu1-koujue.md",
     "lesson": "06",

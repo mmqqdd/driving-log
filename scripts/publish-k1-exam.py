@@ -4,10 +4,44 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 import sys
 from pathlib import Path
+
+JUNK_PREFIX = re.compile(
+    r"^(?:"
+    r"[］\[\]［【】（）()\\！!、．.•]+|"
+    r"单达|单运|单远|单闼|训断|判断|单选|"
+    r"野规题|司新规题|新规题|"
+    r"团(?=驾驶)"
+    r")+"
+)
+
+
+def scrub_stem(q: str) -> str:
+    q = (q or "").strip()
+    prev = None
+    while prev != q:
+        prev = q
+        q = JUNK_PREFIX.sub("", q)
+        q = q.lstrip("］［[]【】（）()\\！!、．.•")
+    q = re.sub(r"(是何含义？|交通标志？)不包.*$", r"\1", q)
+    q = re.sub(r"(?:感说|不包更新|不包更奖|不包更|店不包更|不包)+$", "", q)
+    q = re.sub(r"。不$", "。", q)
+    q = re.sub(r"[~～v•]+$", "", q)
+    q = re.sub(r"([。？])(?:[\d:：A-Za-z~～_\-\.\^\(\)\'我感说不包]+)$", r"\1", q)
+    q = q.replace("判断分", "分")
+    q = re.sub(r"(缩写的是什么？)[A-Z]{2,4}$", r"\1", q)
+    return q.strip()
+
+
+def scrub_opt(s: str) -> str:
+    s = str(s).strip()
+    s = re.sub(r"^[~．.\s•]+", "", s)
+    s = s.replace("丷", "")
+    return s.strip()
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "kb/raw/bank/k1/k1-500.json"
@@ -60,7 +94,7 @@ def main() -> int:
         if not usable(item):
             continue
         opts = [
-            {"key": LETTERS[i], "text": str(text).strip()}
+            {"key": LETTERS[i], "text": scrub_opt(text)}
             for i, text in enumerate(item["options"])
         ]
         image = None
@@ -77,7 +111,7 @@ def main() -> int:
             {
                 "id": item["id"],
                 "type": item["type"],
-                "q": item["q"],
+                "q": scrub_stem(item["q"]),
                 "options": opts,
                 "answer": item["answer"],
                 "why": why_of(item),

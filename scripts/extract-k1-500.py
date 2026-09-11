@@ -157,6 +157,40 @@ def clean_line(s: str) -> str:
     return s
 
 
+JUNK_PREFIX = re.compile(
+    r"^(?:"
+    r"[］\[\]［【】（）()\\！!、．.•]+|"
+    r"单达|单运|单远|单闼|训断|判断|单选|"
+    r"野规题|司新规题|新规题|"
+    r"团(?=驾驶)"
+    r")+"
+)
+
+
+def scrub_stem(q: str) -> str:
+    q = (q or "").strip()
+    prev = None
+    while prev != q:
+        prev = q
+        q = JUNK_PREFIX.sub("", q)
+        q = q.lstrip("］［[]【】（）()\\！!、．.•")
+    q = re.sub(r"(是何含义？|交通标志？)不包.*$", r"\1", q)
+    q = re.sub(r"(?:感说|不包更新|不包更奖|不包更|店不包更|不包)+$", "", q)
+    q = re.sub(r"。不$", "。", q)
+    q = re.sub(r"[~～v•]+$", "", q)
+    q = re.sub(r"([。？])(?:[\d:：A-Za-z~～_\-\.\^\(\)\'我感说不包]+)$", r"\1", q)
+    q = q.replace("判断分", "分")
+    q = re.sub(r"(缩写的是什么？)[A-Z]{2,4}$", r"\1", q)
+    return q.strip()
+
+
+def scrub_opt(s: str) -> str:
+    s = str(s).strip()
+    s = re.sub(r"^[~．.\s•]+", "", s)
+    s = s.replace("丷", "")
+    return s.strip()
+
+
 def parse_ocr(text: str) -> dict:
     raw_lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
     # drop running header / watermark crumbs
@@ -204,12 +238,18 @@ def parse_ocr(text: str) -> dict:
 
     q = re.sub(r"\s+", "", q)
     q = re.sub(r"^第\d+[页贞]", "", q)
-    q = re.sub(r"^(单选|判断|[［\[]?新规题[］\]]?)+", "", q)
+    q = re.sub(
+        r"^(?:单选|单达|单运|单远|单闼|判断|训断|[［\[【（(\\！!]*新规题[］\]】）)!]*)+",
+        "",
+        q,
+    )
     q = re.sub(r"^[圖图＜<]+", "", q)
     q = re.sub(r"[＜<].*$", "", q)
-    q = q.lstrip("［[]】")
+    q = q.lstrip("］［[]【】（）()\\！!、．.")
     q = re.sub(r"[丷].*$", "", q)
     q = re.sub(r"(正确|错误)$", "", q)
+    q = scrub_stem(q)
+    options = [scrub_opt(o) for o in options]
 
     if qtype == "tf":
         options = ["正确", "错误"]
