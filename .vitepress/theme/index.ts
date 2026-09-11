@@ -5,6 +5,7 @@ import Exam from './Exam.vue'
 import Practice from './Practice.vue'
 import JournalCalendar from './JournalCalendar.vue'
 import HomePage from './HomePage.vue'
+import PdfViewer from './PdfViewer.vue'
 import './custom.css'
 
 export default {
@@ -15,5 +16,6 @@ export default {
     app.component('Practice', Practice)
     app.component('JournalCalendar', JournalCalendar)
     app.component('HomePage', HomePage)
+    app.component('PdfViewer', PdfViewer)
   },
 } satisfies Theme

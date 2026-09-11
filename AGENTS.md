@@ -24,6 +24,7 @@
 | `kb/raw/` | 用户收来的 PDF / 视频原包，gitignore，不上网站 | 用户下，AI 读 |
 | `public/practice/k1/` | 按节题包 `01.json`–`09.json` | AI |
 | `public/practice/exam/` | 模拟考题包，从 `kb/raw/bank/` 现抽，gitignore | AI |
+| `public/pdfs/` | 资料 PDF：小文件从 `kb/raw` 拷、大扫描书用 `scripts/split-pdf.swift` 按 24MB 拆卷，gitignore，不上 git | AI |
 | `system/profile.md` | 驾校、费用、进度。frontmatter 的 `profile` 是硬数据 | 用户说，AI 写 |
 | `public/images/` | 用户发来的图，网页用 `/images/文件名` 引用 | AI 拷进去 |
 | `public/images/k1/` | 科目一课里的标和手势。账本 `kb/questions/k1-images.md` | AI |
