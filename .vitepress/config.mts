@@ -69,6 +69,7 @@ function teachingSidebar(opts: { k1Lessons?: boolean } = {}): DefaultTheme.Sideb
     },
     { text: '练习', link: '/subjects/practice' },
     { text: '考试', link: '/exam' },
+    { text: '资料', link: '/subjects/ziliao' },
   ]
 }
 
